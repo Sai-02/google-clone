@@ -1,0 +1,42 @@
+.nav {
+  padding: 1rem;
+  padding-right: 2rem;
+  user-select: none;
+}
+.nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: end;
+  gap: 2rem;
+  li{
+      font-size: 1.2rem;
+  }
+}
+.nav-list-item {
+  display: flex;
+  align-items: center;
+}
+.nav-list-link {
+  text-decoration: none;
+  color: black;
+}
+.nav-list-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.google-apps-icon-container {
+  padding: 0.5rem;
+}
+
+.google-apps-icon-container:hover {
+  border-radius: 50%;
+  background: rgb(230, 230, 230);
+  text-decoration: none;
+}
+.user-icon {
+  font-size: 1.5rem;
+}
+.user-icon-container:hover {
+  text-decoration: none;
+}
