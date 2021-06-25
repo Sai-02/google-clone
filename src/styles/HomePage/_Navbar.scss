@@ -1,0 +1,109 @@
+.nav {
+  padding: 1rem;
+  padding-right: 2rem;
+  user-select: none;
+}
+.nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: end;
+  gap: 2rem;
+  li {
+    font-size: 1.2rem;
+  }
+}
+.nav-list-item {
+  display: flex;
+  align-items: center;
+}
+.nav-list-link {
+  text-decoration: none;
+  color: black;
+}
+.nav-list-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.google-apps-icon-container {
+  padding: 0.5rem;
+}
+
+.google-apps-icon-container:hover {
+  border-radius: 50%;
+  background: rgb(230, 230, 230);
+  text-decoration: none;
+}
+.google-apps-icon {
+  background: none;
+  border: none;
+  display: grid;
+  place-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.user-icon {
+  font-size: 1.5rem;
+}
+.user-icon-container:hover {
+  text-decoration: none;
+}
+
+// =============================================================
+//
+// Drop Down Menu
+//
+// ==============================================================
+
+.home-page-drop-down-container {
+  // border: 1px solid black;
+  width: auto;
+  min-width: 300px;
+  padding: 1rem 0.5rem;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 4px 6px 88px -19px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 4px 6px 88px -19px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 4px 6px 88px -19px rgba(0, 0, 0, 0.7);
+  max-height: 300px;
+  &:hover {
+    cursor: default;
+  }
+}
+.home-page-drop-down {
+  // background: rebeccapurple;
+  max-height: 268px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    padding: 2px;
+    // height: 20px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
+    // border-radius: 10px;
+  }
+
+  /* Handle */
+
+  &::-webkit-scrollbar-thumb {
+    background:rgb(223, 222, 222);
+    height: 20px;
+    border-radius: 10px;
+    max-height: 20px;
+    margin-top: 40%;
+    margin-bottom: 40%;
+    &:hover {
+      // background: #b30000;
+    }
+    ul {
+      // max-height: 100%;
+    }
+  }
+}

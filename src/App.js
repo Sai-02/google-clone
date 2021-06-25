@@ -1,6 +1,6 @@
-import Navbar from "./components/Navbar";
+import HomePage from "./components/HomePage/HomePage";
 function App() {
-  return <Navbar/>;
+  return <HomePage />;
 }
 
 export default App;
