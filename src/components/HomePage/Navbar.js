@@ -12,6 +12,7 @@ const Navbar = () => {
           <a
             target="_blank"
             href="https://mail.google.com/mail/u/0/?ogbl#inbox"
+            rel="noreferrer"
             className="nav-list-link"
           >
             Gmail
@@ -32,19 +33,19 @@ const Navbar = () => {
               <article className="home-page-drop-down">
                 <ul className="drop-down-icons-container">
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a href="firebase.com" target="_blank" rel="noreferrer">
                       <div className="drop-down-icon">
-                        <AccountCircle style={
-                          {
-                            fontSize:"40px",
-                          }
-                        }/>
+                        <AccountCircle className="account-icon" />
                       </div>
                       <div className="drop-down-icon-info">Account</div>
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/2-google-search.png"
@@ -58,6 +59,7 @@ const Navbar = () => {
                     <a
                       href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="drop-down-icon">
                         <img
@@ -72,6 +74,7 @@ const Navbar = () => {
                     <a
                       href="https://www.google.com/maps/search/google+maps/@28.4610277,77.2946795,13z/data=!3m1!4b1"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="drop-down-icon">
                         <img
@@ -83,7 +86,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="https://www.youtube.com/" target="_blank">
+                    <a
+                      href="https://www.youtube.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/5-youtube.png"
@@ -97,6 +104,7 @@ const Navbar = () => {
                     <a
                       href="https://play.google.com/store?hl=en"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="drop-down-icon">
                         <img
@@ -111,6 +119,7 @@ const Navbar = () => {
                     <a
                       href="https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN:en"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="drop-down-icon">
                         <img
@@ -125,6 +134,7 @@ const Navbar = () => {
                     <a
                       href="https://mail.google.com/mail/u/0/#inbox"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="drop-down-icon">
                         <img
@@ -136,7 +146,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="https://meet.google.com/" target="_blank">
+                    <a
+                      href="https://meet.google.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/9-google-meet.png"
@@ -147,7 +161,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/10-google-chat.png"
@@ -158,7 +176,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/11-google-contact.png"
@@ -169,7 +191,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/12-google-drive.png"
@@ -180,7 +206,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/13-google-calendar.png"
@@ -191,7 +221,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/14-google-translate.png"
@@ -202,7 +236,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/15-google-photos.png"
@@ -213,7 +251,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/16-google-duo.png"
@@ -224,7 +266,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="drop-down-icon-container">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="drop-down-icon">
                         <img
                           src="./images/navbar/drop-down-menu/17-google-shop.png"
