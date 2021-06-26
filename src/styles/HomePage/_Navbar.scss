@@ -57,11 +57,10 @@
 // ==============================================================
 
 .home-page-drop-down-container {
-  // border: 1px solid black;
   width: auto;
-  // min-width: 300px;
+
   padding: 1rem 0.4rem;
-  // padding-bottom: 0;
+
   background: white;
   border-radius: 9px;
   box-shadow: -2px 3px 11px 3px rgba(0, 0, 0, 0.2);
@@ -74,24 +73,17 @@
   }
 }
 .home-page-drop-down {
-  // background: rebeccapurple;
-  // max-height: 268px;
-
   max-height: 300px;
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
     width: 10px;
     padding: 2px;
-    // height: 20px;
   }
 
   /* Track */
   &::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px white;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
-    // border-radius: 10px;
   }
 
   /* Handle */
@@ -180,12 +172,10 @@
 
 .login-btn {
   background: none;
+  text-transform: capitalize;
   padding: 0.3rem;
   font-size: 1rem;
   border: solid 1px black;
-  // box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
-  // -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
-  // -moz-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
 
   &:hover {
     cursor: pointer;

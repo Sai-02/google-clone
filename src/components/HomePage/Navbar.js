@@ -4,6 +4,7 @@ import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import AppsIcon from "@material-ui/icons/Apps";
 import Dropdown from "react-bootstrap/Dropdown";
 import { AccountCircle } from "@material-ui/icons";
+import { Button } from "bootstrap";
 const Navbar = () => {
   return (
     <nav className="nav">
@@ -295,7 +296,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faUserCircle} className="user-icon" />
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <button className="login-btn">Sign in</button>
+              <button className="login-btn">sign in</button>
             </Dropdown.Menu>
           </Dropdown>
         </li>
