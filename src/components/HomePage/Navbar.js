@@ -286,7 +286,18 @@ const Navbar = () => {
           </Dropdown>
         </li>
         <li className="nav-list-item user-icon-container">
-          <FontAwesomeIcon icon={faUserCircle} className="user-icon" />
+          <Dropdown>
+            <Dropdown.Toggle
+              variant="success"
+              id="dropdown-basic"
+              className="google-apps-icon"
+            >
+              <FontAwesomeIcon icon={faUserCircle} className="user-icon" />
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <button className="login-btn">Sign in</button>
+            </Dropdown.Menu>
+          </Dropdown>
         </li>
       </ul>
     </nav>

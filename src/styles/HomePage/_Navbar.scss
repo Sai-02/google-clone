@@ -52,7 +52,7 @@
 
 // =============================================================
 //
-// Drop Down Menu
+// Google Apps Drop Down Menu
 //
 // ==============================================================
 
@@ -128,6 +128,7 @@
       color: black;
     }
     padding: 0.3rem;
+    padding: 0.1rem;
     padding-bottom: 2px;
     display: grid;
     gap: 0.5rem;
@@ -169,5 +170,25 @@
       height: 40px;
       width: 40px;
     }
+  }
+}
+// =======================================================
+//
+// Login Drop Down Btn
+//
+// ======================================================
+
+.login-btn {
+  background: none;
+  padding: 0.3rem;
+  font-size: 1rem;
+  border: solid 1px black;
+  // box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
+  // -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
+  // -moz-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.06);
   }
 }
