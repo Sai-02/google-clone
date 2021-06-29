@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Logo from "../../images/logo.png";
 import Mic from "../../images/Google_mic.svg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "@material-ui/core";
 import { Tooltip } from "@material-ui/core";
+import { Data } from "../../App";
 const HomePageHero = () => {
+  const { setIsVoiceSearch } = useContext(Data);
   return (
     <section className="home-page-hero-section">
       <div className="home-page-hero-section-center">
@@ -15,10 +16,16 @@ const HomePageHero = () => {
         <article className="home-search-bar-container">
           <div className="home-search-bar">
             <FontAwesomeIcon icon={faSearch} className="home-search-icon" />
-            <input type="text" />
+            <input type="text" className="home-input" />
             <span className="mic-search-container">
-              <Tooltip arrow title="Search by voice" placement="bottom">
-                <img src={Mic} alt="" />
+              <Tooltip title="Search by voice" arrow placement="bottom">
+                <img
+                  src={Mic}
+                  alt=""
+                  onClick={() => {
+                    setIsVoiceSearch(true);
+                  }}
+                />
               </Tooltip>
             </span>
           </div>
