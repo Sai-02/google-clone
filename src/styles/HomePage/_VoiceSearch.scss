@@ -1,3 +1,30 @@
+// ======================================================
+//
+//  Variables
+//
+// =======================================================
+$animation-color: rgba(90, 89, 89, 0.1);
+@mixin animation1 {
+  box-shadow: 0px 0px 0px 8px $animation-color;
+  -webkit-box-shadow: 0px 0px 0px 8px $animation-color;
+  -moz-box-shadow: 0px 0px 0px 8px $animation-color;
+}
+@mixin animation2 {
+  box-shadow: 0px 0px 0px 20px $animation-color;
+  -webkit-box-shadow: 0px 0px 0px 20px $animation-color;
+  -moz-box-shadow: 0px 0px 0px 20px $animation-color;
+}
+@mixin animation3 {
+  box-shadow: 0px 0px 0px 40px $animation-color;
+  -webkit-box-shadow: 0px 0px 0px 40px $animation-color;
+  -moz-box-shadow: 0px 0px 0px 40px $animation-color;
+}
+
+// =======================================================
+//
+// Styles
+//
+// ========================================================
 .voice-search {
   width: 100vw;
   height: 100vh;
@@ -35,32 +62,50 @@
   width: 144px;
   display: grid;
   place-items: center;
-  box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.75);
-  animation-duration: 5s;
-  animation-name: boxShadow;
+  box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.5);
+
   &:hover {
     cursor: pointer;
   }
 }
-@keyframes boxShadow {
-  from {
-    box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 27px -13px rgba(0, 0, 0, 0.75);
-  }
-  to {
-    box-shadow: 10px 10px 257px 12px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 10px 10px 257px 12px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 10px 10px 257px 12px rgba(0, 0, 0, 0.2);
-  }
-}
 .voice-search-icon {
   color: gray;
-  // font-size: 6rem;
   transform: scale(2.5);
 }
+
+// =====================================
+//
+//  Animations
+//
+// =====================================
+
+.animation {
+  animation-duration: 5s;
+  animation-name: boxShadow;
+  animation: boxShadow 4s infinite;
+}
+@keyframes boxShadow {
+  0% {
+    @include animation3();
+  }
+  25% {
+    @include animation2();
+  }
+  75% {
+    @include animation3();
+  }
+  100% {
+    @include animation2();
+  }
+}
+
+// =========================================
+//
+//   colors
+//
+// ========================================
 .gray {
   color: gray;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Data } from "../../App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -8,42 +8,47 @@ import MicIcon from "@material-ui/icons/Mic";
 const VoiceSearch = () => {
   const { isVoiceSearch, setIsVoiceSearch } = useContext(Data);
   const [voiceSearchIconContainerClass, setVoiceSearchIconContainerClass] =
-    useState("voice-search-icon-container");
-  const [voiceSearchIconClass, setVoiceSearchIconClass] =
-    useState("voice-search-icon");
+    useState("voice-search-icon-container background-white");
+  const [voiceSearchIconClass, setVoiceSearchIconClass] = useState(
+    "voice-search-icon red"
+  );
+  const [messsage, setMessage] = useState("Preparing..");
+
   const speech = new SpeechSynthesisUtterance();
   const SpeechRecognition =
     window.SpeechRecognition || window.webkitSpeechRecognition;
   const recognition = new SpeechRecognition();
-  // const Listen = () => {
-  // recognition.start();
-  // setTimeout(() => {
-  //   recognition.stop();
-  // }, 5000);
-  // };
-  // Listen();
 
   recognition.onstart = (e) => {
-    setVoiceSearchIconContainerClass(
-      "voice-search-icon-container background-red"
-    );
     setVoiceSearchIconClass("voice-search-icon white");
+    setVoiceSearchIconContainerClass(
+      "voice-search-icon-container background-red animation"
+    );
+    setMessage("Listening...");
   };
-  // recognition.onnomatch = () => {
-  //   setVoiceSearchIconContainerClass("voice-search-icon-container");
-  //   setVoiceSearchIconClass("voice-search-icon");
-  // };
   recognition.onresult = (e) => {
     setVoiceSearchIconContainerClass("voice-search-icon-container");
     setVoiceSearchIconClass("voice-search-icon");
+    setMessage(`${e.results[0][0].transcript}...`);
     console.log(e);
+    recognition.stop();
     speech.text = "Getting results, for" + e.results[0][0].transcript;
     speech.volume = 1;
     speech.pitch = 1;
     speech.rate = 1;
-    window.speechSynthesis.speak(speech);
-   
+    // window.speechSynthesis.speak(speech);
   };
+  recognition.onend = () => {
+    if (!(messsage === "Listening...")) setMessage("Didn't get that");
+    setVoiceSearchIconContainerClass("voice-search-icon-container");
+    setVoiceSearchIconClass("voice-search-icon");
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      recognition.start();
+    }, 3000);
+  }, []);
   return (
     <section className="voice-search">
       <nav className="voice-search-nav">
@@ -57,7 +62,10 @@ const VoiceSearch = () => {
         />
       </nav>
       <article className="voice-search-hero">
-        <p>Speak Now</p>
+        <p>
+          {messsage}
+          {/* <span className="try-again-message"> Try again?</span> */}
+        </p>
         <div>
           <div className={voiceSearchIconContainerClass}>
             <MicIcon className={voiceSearchIconClass} />
