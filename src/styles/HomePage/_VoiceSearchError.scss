@@ -1,0 +1,21 @@
+.voice-search-error {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgb(253, 247, 247), rgb(79, 195, 199));
+  article {
+    max-width: 700px;
+    display: grid;
+    gap: 2rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(15, 149, 202);
+  }
+  p {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
