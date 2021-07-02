@@ -16,12 +16,12 @@ const HomePageHero = () => {
     searchValue,
     setSearchValue,
   } = useContext(Data);
-  // useEffect(() => {
-  //   if (input === "") {
-  //   } else {
-  //     setInput("");
-  //   }
-  // }, [isAlert]);
+  useEffect(() => {
+    if (searchValue === "") {
+    } else {
+      setIsSearch(true);
+    }
+  }, [searchValue]);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input === "") {
@@ -32,7 +32,7 @@ const HomePageHero = () => {
       return;
     }
 
-    console.log(input);
+    setSearchValue(input);
   };
   const isValidText = (text) => {
     const format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
