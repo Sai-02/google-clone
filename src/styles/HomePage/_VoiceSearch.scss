@@ -75,6 +75,22 @@ $animation-color: rgba(90, 89, 89, 0.1);
   transform: scale(2.5);
 }
 
+@media screen and (max-width: 500px) {
+  .voice-search-hero {
+    display: grid;
+    gap: 4rem;
+    p {
+      justify-self: center;
+      margin: 0;
+      align-self: flex-end;
+    }
+    div {
+      display: grid;
+      place-items: center;
+      align-self: flex-start;
+    }
+  }
+}
 // =====================================
 //
 //  Animations
