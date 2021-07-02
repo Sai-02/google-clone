@@ -12,7 +12,7 @@ const HomePage = () => {
       {isVoiceSearch ? (
         <VoiceSearch />
       ) : (
-        <div>
+        <div className="home-section">
           <Navbar />
           <HomePageHero />
         </div>
