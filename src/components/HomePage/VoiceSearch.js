@@ -22,20 +22,25 @@ const VoiceSearch = () => {
   );
   const [message, setMessage] = useState("Preparing..");
   const [isVoiceSearchError, setIsVoiceSearchError] = useState(false);
+  const [audio, setAudio] = useState("");
   useEffect(() => {
-    if (
-      message === "Preparing.." ||
-      message === "Listening..." ||
-      message === "Didn't get that"
-    ) {
-    } else {
-      console.log("good to go");
+    if (audio === "") {
+    } else if (message !== audio) {
       setVoiceSearchIconContainerClass("voice-search-icon-container");
       setVoiceSearchIconClass("voice-search-icon");
-      setSearchValue(message);
-      setIsSearch(true);
+      setMessage(audio);
+      setTimeout(() => {
+        setIsSearch(true);
+        setSearchValue(message);
+      }, 2000);
     }
   }, [message]);
+  useEffect(() => {
+    if (audio === "") {
+    } else {
+      setMessage(audio);
+    }
+  }, [audio]);
   if (!isVoiceSearchError) {
     try {
       var speech = new SpeechSynthesisUtterance();
@@ -51,45 +56,33 @@ const VoiceSearch = () => {
           "voice-search-icon-container background-red animation"
         );
         setMessage("Listening...");
+        // setTimeout(() => {
+        //   recognition.abort();
+        // }, 6000);
       };
 
       recognition.onresult = (e) => {
-        console.log("inside prommise");
-        setMessage(`${e.results[0][0].transcript}...`);
-        console.log("on result ", e);
+        setAudio(`${e.results[0][0].transcript}...`);
+
         setVoiceSearchIconContainerClass("voice-search-icon-container");
         setVoiceSearchIconClass("voice-search-icon");
-        recognition.stop();
+        setTimeout(() => {
+          recognition.stop();
+        }, 3000);
 
-        speech.text = "Getting results, for" + e.results[0][0].transcript;
+        speech.text =
+          "Here are the results I found for," + e.results[0][0].transcript;
         speech.volume = 1;
         speech.pitch = 1;
         speech.rate = 1;
-        // window.speechSynthesis.speak(speech);
-      };
-      recognition.onnomatch = () => {
-        setMessage("Didn't get that");
-        setVoiceSearchIconContainerClass("voice-search-icon-container");
-        setVoiceSearchIconClass("voice-search-icon");
+        window.speechSynthesis.speak(speech);
       };
       recognition.onend = () => {
-        setTimeout(() => {
-          if (
-            message === "Listening..." ||
-            message === "Didn't get that" ||
-            message === "Preparing.."
-          ) {
-            console.log(message);
-            setMessage("Didn't get that");
-            setVoiceSearchIconContainerClass("voice-search-icon-container");
-            setVoiceSearchIconClass("voice-search-icon");
-          }
-        }, 4000);
-        setVoiceSearchIconContainerClass("voice-search-icon-container");
-        setVoiceSearchIconClass("voice-search-icon");
-
-        // setMessage("Didn't get that");
-        console.log("on end");
+        if (audio === "") {
+          setMessage("Didn't get that");
+          setVoiceSearchIconContainerClass("voice-search-icon-container");
+          setVoiceSearchIconClass("voice-search-icon");
+        }
       };
     } catch (e) {
       setIsVoiceSearchError(true);
@@ -103,8 +96,8 @@ const VoiceSearch = () => {
       } catch (e) {
         setIsVoiceSearchError(true);
       }
-    }, 2000);
-  }, [isVoiceSearch]);
+    }, 1000);
+  }, []);
 
   return (
     <section className="voice-search">
