@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import MicIcon from "@material-ui/icons/Mic";
 import VoiceSearchError from "./VoiceSearchError";
+import useFetch from "../useFetch";
 
 const VoiceSearch = () => {
   const {
@@ -14,6 +15,8 @@ const VoiceSearch = () => {
     setIsSearch,
     searchValue,
     setSearchValue,
+    doSearch,
+    setDoSearch,
   } = useContext(Data);
   const [voiceSearchIconContainerClass, setVoiceSearchIconContainerClass] =
     useState("voice-search-icon-container background-white");
@@ -23,6 +26,7 @@ const VoiceSearch = () => {
   const [message, setMessage] = useState("Preparing..");
   const [isVoiceSearchError, setIsVoiceSearchError] = useState(false);
   const [audio, setAudio] = useState("");
+  useFetch(searchValue);
   useEffect(() => {
     if (audio === "") {
     } else if (message !== audio) {
@@ -30,8 +34,10 @@ const VoiceSearch = () => {
       setVoiceSearchIconClass("voice-search-icon");
       setMessage(audio);
       setTimeout(() => {
-        setIsSearch(true);
-        setSearchValue(message);
+        setDoSearch(true);
+        // setSearchValue(message);
+        setSearchValue(audio);
+        // setIsSearch(true);
       }, 2000);
     }
   }, [message]);

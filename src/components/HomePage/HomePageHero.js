@@ -6,6 +6,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Tooltip } from "@material-ui/core";
 import { Data } from "../../App";
 import Alert from "@material-ui/lab/Alert";
+import useFetch from "../useFetch";
 const HomePageHero = () => {
   const [input, setInput] = useState("");
   const [isAlert, setIsAlert] = useState(false);
@@ -15,13 +16,17 @@ const HomePageHero = () => {
     setIsSearch,
     searchValue,
     setSearchValue,
+    doSearch,
+    setDoSearch,
   } = useContext(Data);
   useEffect(() => {
     if (searchValue === "") {
     } else {
-      setIsSearch(true);
+      // useFetch(searchValue);
+      setDoSearch(true);
     }
   }, [searchValue]);
+  useFetch(searchValue);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input === "") {

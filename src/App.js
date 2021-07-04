@@ -5,6 +5,8 @@ import { useState } from "react";
 const Data = React.createContext(null);
 export { Data };
 function App() {
+  const [doSearch, setDoSearch] = useState(false);
+  const [allResponse, setAllResponse] = useState({});
   const [searchValue, setSearchValue] = useState("");
   const [isSearch, setIsSearch] = useState(false);
   const [isVoiceSearch, setIsVoiceSearch] = useState(false);
@@ -18,6 +20,10 @@ function App() {
         setIsSearch,
         searchValue,
         setSearchValue,
+        allResponse,
+        setAllResponse,
+        doSearch,
+        setDoSearch,
       }}
     >
       {isSearch ? <SearchPage /> : <HomePage />}
