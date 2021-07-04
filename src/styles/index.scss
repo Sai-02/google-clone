@@ -1,8 +1,15 @@
+// Home Page Imports
 @import "./HomePage/Navbar";
 @import "./HomePage/HomePageHero.scss";
 @import "./HomePage/VoiceSearch";
 @import "./HomePage/VoiceSearchError";
 @import "./HomePage/HomePage";
+
+// Search Page Imports
+@import "./SearchPage/SearchPage";
+
+
+// Global Styles
 * {
   margin: 0;
   padding: 0;
