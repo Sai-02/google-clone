@@ -1,0 +1,114 @@
+// =============================================================
+//
+// Google Apps Drop Down Menu
+//
+// ==============================================================
+
+.home-page-drop-down-container {
+  width: auto;
+
+  padding: 1rem 0.4rem;
+
+  background: white;
+  border-radius: 9px;
+  box-shadow: -2px 3px 11px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -2px 3px 11px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -2px 3px 11px 3px rgba(0, 0, 0, 0.2);
+
+  max-height: 400px;
+  &:hover {
+    cursor: default;
+  }
+}
+.home-page-drop-down {
+  max-height: 300px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    padding: 2px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+  }
+
+  /* Handle */
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(223, 222, 222);
+    height: 20px;
+    border-radius: 10px;
+    max-height: 20px;
+    margin-top: 40%;
+    margin-bottom: 40%;
+  }
+}
+.drop-down-icons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+.drop-down-icon-container {
+  list-style: none;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  .account-icon {
+    width: 30px;
+    height: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    &:active {
+      color: black;
+    }
+    padding: 0.3rem;
+    padding: 0.1rem;
+    padding-bottom: 2px;
+    display: grid;
+    gap: 0.5rem;
+    border-radius: 10px;
+    &:hover {
+      background: rgba(195, 231, 255, 1);
+    }
+  }
+}
+.drop-down-icon {
+  text-align: center;
+}
+.drop-down-icon-info {
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .home-page-drop-down-container {
+    padding: 1rem 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .home-page-drop-down {
+    max-height: 368px;
+  }
+  .drop-down-icons-container {
+    gap: 7px;
+  }
+  .drop-down-icon-container {
+    a {
+      padding: 0.6rem;
+      gap: 0.6rem;
+    }
+    img {
+      height: 40px;
+      width: 40px;
+    }
+    .account-icon {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
