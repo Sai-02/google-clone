@@ -22,6 +22,7 @@
 .search-page-search-bar {
   display: grid;
   grid-template-columns: auto 4px 24px 24px;
+  gap: 1rem;
   place-items: center;
   width: 100%;
   justify-self: center;
@@ -49,6 +50,9 @@
       outline: none;
     }
   }
+}
+.search-page-search-bar-divider {
+  // margin-right: 3px;
 }
 .mic-search-container {
   display: grid;
