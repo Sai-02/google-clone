@@ -10,8 +10,14 @@ import NavbarDropDown from "../Gloabals/NavbarDropDown";
 import { Dropdown } from "react-bootstrap";
 
 const SearchPageNavbar = () => {
-  const { isSearch, setIsSearch, searchValue, setSearchValue } =
-    useContext(Data);
+  const {
+    isSearch,
+    setIsSearch,
+    searchValue,
+    setSearchValue,
+    isVoiceSearch,
+    setIsVoiceSearch,
+  } = useContext(Data);
   const [input, setInput] = useState(searchValue);
   return (
     <nav className="search-page-nav">
@@ -29,20 +35,24 @@ const SearchPageNavbar = () => {
       <form className="search-page-search-bar-container">
         <div className="search-page-search-bar">
           <input
-            type="text"
+            type="search"
             value={input}
             onChange={(e) => {
               setInput(e.target.value);
             }}
           />
-          <Divider orientation="vertical" flexItem />
+          <Divider
+            orientation="vertical"
+            flexItem
+            className="search-page-search-bar-divider"
+          />
           <span className="mic-search-container">
             <Tooltip title="Search by voice" arrow placement="bottom">
               <img
                 src={Mic}
                 alt=""
                 onClick={() => {
-                  // setIsVoiceSearch(true);
+                  setIsVoiceSearch(true);
                 }}
               />
             </Tooltip>

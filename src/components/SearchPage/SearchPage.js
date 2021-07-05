@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Data } from "../../App";
 import SearchPageNavbar from "./SearchPageNavbar";
+import VoiceSearch from "../HomePage/VoiceSearch";
 const SearchPage = () => {
   const {
     isVoiceSearch,
@@ -15,11 +16,17 @@ const SearchPage = () => {
     setDoSearch,
   } = useContext(Data);
   return (
-    <section className="search-page">
-      {/* Search Page Navbar */}
-      <SearchPageNavbar />
-      {/* End of Search Pagge Navbar */}
-    </section>
+    <>
+      {isVoiceSearch ? (
+        <VoiceSearch />
+      ) : (
+        <section className="search-page">
+          {/* Search Page Navbar */}
+          <SearchPageNavbar />
+          {/* End of Search Pagge Navbar */}
+        </section>
+      )}
+    </>
   );
 };
 
