@@ -1,9 +1,26 @@
-import React,{useContext} from "react";
-
-
+import React, { useContext } from "react";
+import { Data } from "../../App";
+import SearchPageNavbar from "./SearchPageNavbar";
 const SearchPage = () => {
-  
-  return <div>in the search page we are fine ?</div>;
+  const {
+    isVoiceSearch,
+    setIsVoiceSearch,
+    isSearch,
+    setIsSearch,
+    searchValue,
+    setSearchValue,
+    allResponse,
+    setAllResponse,
+    doSearch,
+    setDoSearch,
+  } = useContext(Data);
+  return (
+    <section className="search-page">
+      {/* Search Page Navbar */}
+      <SearchPageNavbar />
+      {/* End of Search Pagge Navbar */}
+    </section>
+  );
 };
 
 export default SearchPage;
