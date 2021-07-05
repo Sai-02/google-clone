@@ -14,6 +14,8 @@ export const useFetch = ({ data }) => {
     setDoSearch,
     isSearch,
     setIsSearch,
+    isVoiceSearch,
+    setIsVoiceSearch,
   } = useContext(Data);
   const getAllResponse = () => {
     // if (searchValue === "") return;
@@ -30,6 +32,7 @@ export const useFetch = ({ data }) => {
 
           setAllResponse(res.data);
           setIsSearch(true);
+          setIsVoiceSearch(false);
         });
     }
   };
