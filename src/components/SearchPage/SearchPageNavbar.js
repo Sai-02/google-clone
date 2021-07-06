@@ -70,7 +70,7 @@ const SearchPageNavbar = () => {
         </div>
       </Tooltip>
       <Tooltip title="Google Account" interactive placement="left-end">
-        <li className="nav-list-item user-icon-container">
+        <div className="search-paage-user-icon-container user-icon-container">
           <Dropdown>
             <Dropdown.Toggle
               variant="success"
@@ -83,7 +83,7 @@ const SearchPageNavbar = () => {
               <button className="login-btn">sign in</button>
             </Dropdown.Menu>
           </Dropdown>
-        </li>
+        </div>
       </Tooltip>
     </nav>
   );
