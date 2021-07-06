@@ -68,7 +68,7 @@ const VoiceSearch = () => {
       };
 
       recognition.onresult = (e) => {
-        setAudio(`${e.results[0][0].transcript}...`);
+        setAudio(`${e.results[0][0].transcript}`);
 
         setVoiceSearchIconContainerClass("voice-search-icon-container");
         setVoiceSearchIconClass("voice-search-icon");
