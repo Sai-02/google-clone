@@ -22,8 +22,15 @@ const SearchPage = () => {
       ) : (
         <section className="search-page">
           {/* Search Page Navbar */}
-          <SearchPageNavbar />
-          {/* End of Search Pagge Navbar */}
+          <div className="search-apge-header">
+            <SearchPageNavbar />
+            {/* End of Search Pagge Navbar */}
+            <article className="search-page-nav-links">
+               <ul>
+                 <li></li>
+               </ul>
+            </article>
+          </div>
         </section>
       )}
     </>
