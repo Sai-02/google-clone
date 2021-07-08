@@ -27,7 +27,7 @@ const SearchPage = () => {
     setDoSearch,
   } = useContext(Data);
   useEffect(() => {
-    history.push("/all");
+    history.push(`/${searchValue}/all`);
   }, [isVoiceSearch]);
 
   return (
@@ -44,22 +44,22 @@ const SearchPage = () => {
           </section>
 
           <Switch>
-            <Route path="/all">
+            <Route path={`/${searchValue}/all`}>
               <AllResponse />
             </Route>
-            <Route path="/Images">
+            <Route path={`/${searchValue}/Images`}>
               <ImagesResponse />
             </Route>
-            <Route path="/Videos">
+            <Route path={`/${searchValue}/Videos`}>
               <VideoResponse />
             </Route>
-            <Route path="/News">
+            <Route path={`/${searchValue}/News`}>
               <NewsResponse />
             </Route>
-            <Route path="/Books">
+            <Route path={`/${searchValue}/Books`}>
               <BooksResponse />
             </Route>
-            <Route path="/Shopping">
+            <Route path={`/${searchValue}/Shopping`}>
               <ShoppingResponse />
             </Route>
           </Switch>

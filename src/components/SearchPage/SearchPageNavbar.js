@@ -17,7 +17,6 @@ import { Divider } from "@material-ui/core";
 import NavbarDropDown from "../Gloabals/NavbarDropDown";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import HomePage from "../HomePage/HomePage";
 
 const SearchPageNavbar = () => {
   const {
@@ -117,7 +116,7 @@ const SearchPageNavbar = () => {
           <div className="space-filler"></div>
           <ul className="search-page-nav-list">
             <Link
-              to="/all"
+              to={`/${searchValue}/all`}
               style={{
                 height: "100%",
               }}
@@ -135,7 +134,7 @@ const SearchPageNavbar = () => {
               </li>
             </Link>
             <Link
-              to="/Images"
+              to={`/${searchValue}/Images`}
               style={{
                 height: "100%",
               }}
@@ -153,7 +152,7 @@ const SearchPageNavbar = () => {
               </li>
             </Link>
             <Link
-              to="/Videos"
+              to={`/${searchValue}/Videos`}
               style={{
                 height: "100%",
               }}
@@ -171,7 +170,7 @@ const SearchPageNavbar = () => {
               </li>
             </Link>
             <Link
-              to="/News"
+              to={`/${searchValue}/News`}
               style={{
                 height: "100%",
               }}
@@ -189,7 +188,7 @@ const SearchPageNavbar = () => {
               </li>
             </Link>
             <Link
-              to="/Books"
+              to={`/${searchValue}/Books`}
               style={{
                 height: "100%",
               }}
@@ -212,7 +211,7 @@ const SearchPageNavbar = () => {
               </li>
             </Link>
             <Link
-              to="/Shopping"
+              to={`/${searchValue}/Shopping`}
               style={{
                 height: "100%",
               }}
