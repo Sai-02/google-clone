@@ -10,6 +10,7 @@ import ImagesResponse from "./ImagesResponse";
 import NewsResponse from "./NewsResponse";
 import ShoppingResponse from "./ShoppingResponse";
 import VideoResponse from "./VideoResponse";
+import useFetch from "../useFetch";
 
 const SearchPage = () => {
   const history = useHistory();
@@ -29,10 +30,12 @@ const SearchPage = () => {
   useEffect(() => {
     history.push(`/${searchValue}/all`);
   }, [isVoiceSearch]);
-
+  useEffect(() => {
+    console.log("search value is changed");
+    history.push(`/${searchValue}/all`);
+  }, [searchValue]);
   return (
     <>
-      {/* <BrowserRouter> */}
       {isVoiceSearch ? (
         <VoiceSearch />
       ) : (
@@ -65,7 +68,6 @@ const SearchPage = () => {
           </Switch>
         </>
       )}
-      {/* </BrowserRouter> */}
     </>
   );
 };

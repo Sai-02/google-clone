@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Logo from "../../images/logo-navbar.png";
 import { Data } from "../../App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,9 +30,18 @@ const SearchPageNavbar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (input === searchValue) {
+      return;
+    }
+
+    setSearchValue(input);
     console.log("I am submitted");
   };
+
   const [input, setInput] = useState(searchValue);
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [searchValue]);
   return (
     <>
       <nav className="search-page-navbar-container">
