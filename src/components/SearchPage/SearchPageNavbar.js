@@ -37,7 +37,13 @@ const SearchPageNavbar = () => {
     <>
       <nav className="search-page-navbar-container">
         <div className="search-page-nav">
-          <Link to="/">
+          <Link
+            to="/"
+            style={{
+              display: "grid",
+              placeItems: "center",
+            }}
+          >
             <div className="search-page-nav-image-container">
               <img
                 src={Logo}
