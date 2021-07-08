@@ -2,6 +2,7 @@ import React from "react";
 import HomePage from "./components/HomePage/HomePage";
 import SearchPage from "./components/SearchPage/SearchPage";
 import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 const Data = React.createContext(null);
 export { Data };
 function App() {
@@ -12,22 +13,24 @@ function App() {
   const [isVoiceSearch, setIsVoiceSearch] = useState(false);
 
   return (
-    <Data.Provider
-      value={{
-        isVoiceSearch,
-        setIsVoiceSearch,
-        isSearch,
-        setIsSearch,
-        searchValue,
-        setSearchValue,
-        allResponse,
-        setAllResponse,
-        doSearch,
-        setDoSearch,
-      }}
-    >
-      {isSearch ? <SearchPage /> : <HomePage />}
-    </Data.Provider>
+    <BrowserRouter>
+      <Data.Provider
+        value={{
+          isVoiceSearch,
+          setIsVoiceSearch,
+          isSearch,
+          setIsSearch,
+          searchValue,
+          setSearchValue,
+          allResponse,
+          setAllResponse,
+          doSearch,
+          setDoSearch,
+        }}
+      >
+        {isSearch ? <SearchPage /> : <HomePage />}
+      </Data.Provider>
+    </BrowserRouter>
   );
 }
 

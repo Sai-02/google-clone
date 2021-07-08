@@ -16,7 +16,8 @@ import Mic from "../../images/Google_mic.svg.png";
 import { Divider } from "@material-ui/core";
 import NavbarDropDown from "../Gloabals/NavbarDropDown";
 import { Dropdown } from "react-bootstrap";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import HomePage from "../HomePage/HomePage";
 
 const SearchPageNavbar = () => {
   const {
@@ -37,17 +38,19 @@ const SearchPageNavbar = () => {
     <>
       <nav className="search-page-navbar-container">
         <div className="search-page-nav">
-          <div className="search-page-nav-image-container">
-            <img
-              src={Logo}
-              alt="google image"
-              onClick={() => {
-                setIsSearch(false);
-                setSearchValue("");
-              }}
-              className="search-page-logo"
-            />
-          </div>
+          <Link to="/">
+            <div className="search-page-nav-image-container">
+              <img
+                src={Logo}
+                alt="google image"
+                onClick={() => {
+                  setIsSearch(false);
+                  setSearchValue("");
+                }}
+                className="search-page-logo"
+              />
+            </div>
+          </Link>
           <form
             className="search-page-search-bar-container"
             onSubmit={handleSubmit}
