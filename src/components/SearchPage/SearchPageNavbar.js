@@ -26,6 +26,7 @@ const SearchPageNavbar = () => {
     isVoiceSearch,
     setIsVoiceSearch,
   } = useContext(Data);
+  const [activeIndex, setActiveIndex] = useState(0);
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("I am submitted");
@@ -111,31 +112,56 @@ const SearchPageNavbar = () => {
         <div className="search-page-nav-list-container">
           <div className="space-filler"></div>
           <ul className="search-page-nav-list">
-            <li className="active">
+            <li
+              className={activeIndex == 0 ? "active" : ""}
+              onClick={() => {
+                setActiveIndex(0);
+              }}
+            >
               <span className="search-page-nav-list-icon">
                 <FontAwesomeIcon icon={faSearch} />
               </span>
               <span className="search-page-nav-list-text">All</span>
             </li>
-            <li>
+            <li
+              className={activeIndex == 1 ? "active" : ""}
+              onClick={() => {
+                setActiveIndex(1);
+              }}
+            >
               <span className="search-page-nav-list-icon">
                 <ImageOutlinedIcon />
               </span>
               <span className="search-page-nav-list-text">Images</span>
             </li>
-            <li>
+            <li
+              className={activeIndex == 2 ? "active" : ""}
+              onClick={() => {
+                setActiveIndex(2);
+              }}
+            >
               <span className="search-page-nav-list-icon">
                 <YouTubeIcon />
               </span>
               <span className="search-page-nav-list-text">Videos</span>
             </li>
-            <li>
+            <li
+              className={activeIndex == 3 ? "active" : ""}
+              onClick={() => {
+                setActiveIndex(3);
+              }}
+            >
               <span className="search-page-nav-list-icon">
                 <FontAwesomeIcon icon={faNewspaper} />
               </span>
               <span className="search-page-nav-list-text">News</span>
             </li>
-            <li>
+            <li
+              className={activeIndex == 4 ? "active" : ""}
+              onClick={() => {
+                setActiveIndex(4);
+              }}
+            >
               <span className="search-page-nav-list-icon">
                 <BookOutlinedIcon
                   style={{
@@ -146,7 +172,12 @@ const SearchPageNavbar = () => {
               </span>
               <span className="search-page-nav-list-text">Books</span>
             </li>
-            <li>
+            <li
+              className={activeIndex == 5 ? "active" : ""}
+              onClick={() => {
+                setActiveIndex(5);
+              }}
+            >
               <span className="search-page-nav-list-icon">
                 <TagOutlined />
               </span>

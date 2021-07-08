@@ -157,7 +157,26 @@
   .search-page-apps-icon-container {
     display: none;
   }
-  .search-paage-user-icon-container {
+  .search-page-user-icon-container {
     display: none;
+  }
+  // =================================
+  //
+  // Search Page nav List
+  //
+  // ===============================
+  .search-page-nav-list-container {
+    grid-template-columns: 1fr;
+    .space-filler {
+      display: none;
+    }
+  }
+  .search-page-nav-list {
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 500px) {
+  .search-page-nav-list {
+    overflow: scroll;
   }
 }
