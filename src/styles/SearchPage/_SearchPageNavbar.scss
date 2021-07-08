@@ -101,6 +101,9 @@
   padding: 0 2rem;
   grid-template-columns: 3fr 17fr 7fr auto auto;
   gap: 1rem;
+  a {
+    text-decoration: none;
+  }
 }
 .search-page-nav-list {
   max-width: 100%;
@@ -167,6 +170,7 @@
   // ===============================
   .search-page-nav-list-container {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
     .space-filler {
       display: none;
     }

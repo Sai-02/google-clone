@@ -16,6 +16,7 @@ import Mic from "../../images/Google_mic.svg.png";
 import { Divider } from "@material-ui/core";
 import NavbarDropDown from "../Gloabals/NavbarDropDown";
 import { Dropdown } from "react-bootstrap";
+import { BrowserRouter, Link } from "react-router-dom";
 
 const SearchPageNavbar = () => {
   const {
@@ -112,77 +113,119 @@ const SearchPageNavbar = () => {
         <div className="search-page-nav-list-container">
           <div className="space-filler"></div>
           <ul className="search-page-nav-list">
-            <li
-              className={activeIndex == 0 ? "active" : ""}
-              onClick={() => {
-                setActiveIndex(0);
+            <Link
+              to="/all"
+              style={{
+                height: "100%",
               }}
             >
-              <span className="search-page-nav-list-icon">
-                <FontAwesomeIcon icon={faSearch} />
-              </span>
-              <span className="search-page-nav-list-text">All</span>
-            </li>
-            <li
-              className={activeIndex == 1 ? "active" : ""}
-              onClick={() => {
-                setActiveIndex(1);
+              <li
+                className={activeIndex == 0 ? "active" : ""}
+                onClick={() => {
+                  setActiveIndex(0);
+                }}
+              >
+                <span className="search-page-nav-list-icon">
+                  <FontAwesomeIcon icon={faSearch} />
+                </span>
+                <span className="search-page-nav-list-text">All</span>
+              </li>
+            </Link>
+            <Link
+              to="/Images"
+              style={{
+                height: "100%",
               }}
             >
-              <span className="search-page-nav-list-icon">
-                <ImageOutlinedIcon />
-              </span>
-              <span className="search-page-nav-list-text">Images</span>
-            </li>
-            <li
-              className={activeIndex == 2 ? "active" : ""}
-              onClick={() => {
-                setActiveIndex(2);
+              <li
+                className={activeIndex == 1 ? "active" : ""}
+                onClick={() => {
+                  setActiveIndex(1);
+                }}
+              >
+                <span className="search-page-nav-list-icon">
+                  <ImageOutlinedIcon />
+                </span>
+                <span className="search-page-nav-list-text">Images</span>
+              </li>
+            </Link>
+            <Link
+              to="/Videos"
+              style={{
+                height: "100%",
               }}
             >
-              <span className="search-page-nav-list-icon">
-                <YouTubeIcon />
-              </span>
-              <span className="search-page-nav-list-text">Videos</span>
-            </li>
-            <li
-              className={activeIndex == 3 ? "active" : ""}
-              onClick={() => {
-                setActiveIndex(3);
+              <li
+                className={activeIndex == 2 ? "active" : ""}
+                onClick={() => {
+                  setActiveIndex(2);
+                }}
+              >
+                <span className="search-page-nav-list-icon">
+                  <YouTubeIcon />
+                </span>
+                <span className="search-page-nav-list-text">Videos</span>
+              </li>
+            </Link>
+            <Link
+              to="/News"
+              style={{
+                height: "100%",
               }}
             >
-              <span className="search-page-nav-list-icon">
-                <FontAwesomeIcon icon={faNewspaper} />
-              </span>
-              <span className="search-page-nav-list-text">News</span>
-            </li>
-            <li
-              className={activeIndex == 4 ? "active" : ""}
-              onClick={() => {
-                setActiveIndex(4);
+              <li
+                className={activeIndex == 3 ? "active" : ""}
+                onClick={() => {
+                  setActiveIndex(3);
+                }}
+              >
+                <span className="search-page-nav-list-icon">
+                  <FontAwesomeIcon icon={faNewspaper} />
+                </span>
+                <span className="search-page-nav-list-text">News</span>
+              </li>
+            </Link>
+            <Link
+              to="/Books"
+              style={{
+                height: "100%",
               }}
             >
-              <span className="search-page-nav-list-icon">
-                <BookOutlinedIcon
-                  style={{
-                    height: "20px",
-                    width: "20px",
-                  }}
-                />
-              </span>
-              <span className="search-page-nav-list-text">Books</span>
-            </li>
-            <li
-              className={activeIndex == 5 ? "active" : ""}
-              onClick={() => {
-                setActiveIndex(5);
+              <li
+                className={activeIndex == 4 ? "active" : ""}
+                onClick={() => {
+                  setActiveIndex(4);
+                }}
+              >
+                <span className="search-page-nav-list-icon">
+                  <BookOutlinedIcon
+                    style={{
+                      height: "20px",
+                      width: "20px",
+                    }}
+                  />
+                </span>
+                <span className="search-page-nav-list-text">Books</span>
+              </li>
+            </Link>
+            <Link
+              to="/Shopping"
+              style={{
+                height: "100%",
               }}
             >
-              <span className="search-page-nav-list-icon">
-                <TagOutlined />
-              </span>
-              <span className="search-page-nav-list-text">Shopping</span>
-            </li>
+              <li
+                className={activeIndex == 5 ? "active" : ""}
+                onClick={() => {
+                  setActiveIndex(5);
+                }}
+              >
+                <span className="search-page-nav-list-icon">
+                  <TagOutlined />
+                </span>
+                <span className="search-page-nav-list-text">Shopping</span>
+              </li>
+            </Link>
           </ul>
           <div className="space-filler"></div>
           <div className="space-filler"></div>
