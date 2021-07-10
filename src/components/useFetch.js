@@ -16,6 +16,8 @@ export const useFetch = ({ data }) => {
     setIsSearch,
     isVoiceSearch,
     setIsVoiceSearch,
+    isAllResponseFound,
+    setIsAllResponseFound,
   } = useContext(Data);
   const getAllResponse = () => {
     // if (searchValue === "") return;
@@ -23,7 +25,7 @@ export const useFetch = ({ data }) => {
       console.log("search value is ", searchValue);
       axios
         // .get(
-        //   `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchId}&q=${data}`
+        //   `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchId}&q=${searchValue}`
         // )
         .get("../allResponse.json")
         .then((res) => {
@@ -33,6 +35,9 @@ export const useFetch = ({ data }) => {
           setAllResponse(res.data);
           setIsSearch(true);
           setIsVoiceSearch(false);
+          setTimeout(() => {
+            setIsAllResponseFound(true);
+          }, 2000);
         });
     }
   };

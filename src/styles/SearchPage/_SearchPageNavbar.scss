@@ -1,3 +1,8 @@
+@mixin searchPageFormat {
+  display: grid;
+  grid-template-columns: 3fr 17fr 7fr auto auto;
+  gap: 1rem;
+}
 // ======================================
 //
 // Search Page Nav

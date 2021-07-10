@@ -17,6 +17,7 @@ import { Divider } from "@material-ui/core";
 import NavbarDropDown from "../Gloabals/NavbarDropDown";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useFetch from "../useFetch";
 
 const SearchPageNavbar = () => {
   const {
@@ -26,6 +27,10 @@ const SearchPageNavbar = () => {
     setSearchValue,
     isVoiceSearch,
     setIsVoiceSearch,
+    doSearch,
+    setDoSearch,
+    isAllResponseFound,
+    setIsAllResponseFound,
   } = useContext(Data);
   const [activeIndex, setActiveIndex] = useState(0);
   const handleSubmit = (e) => {
@@ -38,9 +43,12 @@ const SearchPageNavbar = () => {
     console.log("I am submitted");
   };
 
+  useFetch(searchValue);
   const [input, setInput] = useState(searchValue);
   useEffect(() => {
+    setIsAllResponseFound(false);
     setActiveIndex(0);
+    setDoSearch(true);
   }, [searchValue]);
   return (
     <>
