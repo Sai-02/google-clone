@@ -11,6 +11,7 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
   const [isSearch, setIsSearch] = useState(false);
   const [isVoiceSearch, setIsVoiceSearch] = useState(false);
+  const [isAllResponseFound, setIsAllResponseFound] = useState(false);
 
   return (
     <BrowserRouter>
@@ -26,6 +27,8 @@ function App() {
           setAllResponse,
           doSearch,
           setDoSearch,
+          isAllResponseFound,
+          setIsAllResponseFound,
         }}
       >
         {isSearch ? <SearchPage /> : <HomePage />}
