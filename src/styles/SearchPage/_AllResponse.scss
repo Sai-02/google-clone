@@ -47,9 +47,13 @@
 }
 @media screen and (max-width: 500px) {
   .all-response-container {
+    grid-template-columns: 1fr;
     padding: 2rem 0.7rem;
     .space-filler {
-      display: none;
+      display: hidden;
     }
+  }
+  .all-response-content {
+    overflow: scroll;
   }
 }
