@@ -185,6 +185,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .search-page-nav {
+    padding-bottom: 1rem;
+  }
   .search-page-nav-list {
     overflow: scroll;
   }

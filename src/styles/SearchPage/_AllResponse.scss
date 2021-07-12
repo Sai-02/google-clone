@@ -48,7 +48,8 @@
 @media screen and (max-width: 500px) {
   .all-response-container {
     grid-template-columns: 1fr;
-    padding: 2rem 0.7rem;
+    padding: 0.7rem 0.7rem;
+    padding-top: 0;
     .space-filler {
       display: hidden;
     }
