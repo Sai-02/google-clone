@@ -190,5 +190,9 @@
   }
   .search-page-nav-list {
     overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
