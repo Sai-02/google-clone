@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Data } from "../../App";
 import SearchPageNavbar from "./SearchPageNavbar";
 import VoiceSearch from "../HomePage/VoiceSearch";
@@ -14,7 +14,8 @@ import useFetch from "../useFetch";
 
 const SearchPage = () => {
   const history = useHistory();
-
+  const searchPageRef = useRef();
+  const [navbarFixed, setNavbarFixed] = useState(false);
   const {
     isVoiceSearch,
     setIsVoiceSearch,
@@ -34,38 +35,52 @@ const SearchPage = () => {
     console.log("search value is changed");
     history.push(`/${searchValue}/all`);
   }, [searchValue]);
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setNavbarFixed(true);
+    } else {
+      setNavbarFixed(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {isVoiceSearch ? (
         <VoiceSearch />
       ) : (
         <>
-          <section className="search-page">
+          <section className="search-page" ref={searchPageRef}>
             {/* Search Page Navbar */}
-            <SearchPageNavbar />
+            <SearchPageNavbar navbarFixed={navbarFixed} />
             {/* End of Search Pagge Navbar */}
-          </section>
 
-          <Switch>
-            <Route path={`/${searchValue}/all`}>
-              <AllResponse />
-            </Route>
-            <Route path={`/${searchValue}/Images`}>
-              <ImagesResponse />
-            </Route>
-            <Route path={`/${searchValue}/Videos`}>
-              <VideoResponse />
-            </Route>
-            <Route path={`/${searchValue}/News`}>
-              <NewsResponse />
-            </Route>
-            <Route path={`/${searchValue}/Books`}>
-              <BooksResponse />
-            </Route>
-            <Route path={`/${searchValue}/Shopping`}>
-              <ShoppingResponse />
-            </Route>
-          </Switch>
+            <Switch>
+              <Route path={`/${searchValue}/all`}>
+                <AllResponse searchPageRef={searchPageRef} />
+              </Route>
+              <Route path={`/${searchValue}/Images`}>
+                <ImagesResponse />
+              </Route>
+              <Route path={`/${searchValue}/Videos`}>
+                <VideoResponse />
+              </Route>
+              <Route path={`/${searchValue}/News`}>
+                <NewsResponse />
+              </Route>
+              <Route path={`/${searchValue}/Books`}>
+                <BooksResponse />
+              </Route>
+              <Route path={`/${searchValue}/Shopping`}>
+                <ShoppingResponse />
+              </Route>
+            </Switch>
+          </section>
         </>
       )}
     </>

@@ -45,6 +45,23 @@
     word-wrap: break-word;
   }
 }
+.fixed {
+  background: white;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  padding: 0;
+  box-shadow: 0px 7px 14px -1px rgba(211, 210, 210, 1);
+  -webkit-box-shadow: 0px 7px 14px -1px rgba(211, 210, 210, 1);
+  -moz-box-shadow: 0px 7px 14px -1px rgba(211, 210, 210, 1);
+  width: 100vw;
+  transition-delay: 0.01s;
+}
+.padding-bottom-0 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
 @media screen and (max-width: 500px) {
   .all-response-container {
     grid-template-columns: 1fr;
@@ -59,5 +76,9 @@
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+  .padding-bottom-0 {
+    // padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
   }
 }

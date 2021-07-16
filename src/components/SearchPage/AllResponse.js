@@ -4,10 +4,10 @@ import { Skeleton } from "@material-ui/lab";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
-const AllResponse = () => {
+const AllResponse = ({ searchPageRef }) => {
   const { allResponse, isAllResponseFound } = useContext(Data);
   const { searchInformation, items } = allResponse;
-
+ 
   return (
     <section className="all-response-container">
       <div className="space-filler"></div>

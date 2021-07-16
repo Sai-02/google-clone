@@ -19,7 +19,7 @@ import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useFetch from "../useFetch";
 
-const SearchPageNavbar = () => {
+const SearchPageNavbar = ({ navbarFixed }) => {
   const {
     isSearch,
     setIsSearch,
@@ -52,8 +52,18 @@ const SearchPageNavbar = () => {
   }, [searchValue]);
   return (
     <>
-      <nav className="search-page-navbar-container">
-        <div className="search-page-nav">
+      <nav
+        className={
+          navbarFixed
+            ? "search-page-navbar-container fixed"
+            : "search-page-navbar-container"
+        }
+      >
+        <div
+          className={
+            navbarFixed ? "search-page-nav padding-bottom-0" : "search-page-nav"
+          }
+        >
           <Link
             to="/"
             style={{
@@ -135,127 +145,131 @@ const SearchPageNavbar = () => {
             </div>
           </Tooltip>
         </div>
-        <div className="search-page-nav-list-container">
-          <div className="space-filler"></div>
-          <ul className="search-page-nav-list">
-            <Link
-              to={`/${searchValue}/all`}
-              style={{
-                height: "100%",
-              }}
-            >
-              <li
-                className={activeIndex == 0 ? "active" : ""}
-                onClick={() => {
-                  setActiveIndex(0);
+        {navbarFixed ? (
+          ""
+        ) : (
+          <div className="search-page-nav-list-container">
+            <div className="space-filler"></div>
+            <ul className="search-page-nav-list">
+              <Link
+                to={`/${searchValue}/all`}
+                style={{
+                  height: "100%",
                 }}
               >
-                <span className="search-page-nav-list-icon">
-                  <FontAwesomeIcon icon={faSearch} />
-                </span>
-                <span className="search-page-nav-list-text">All</span>
-              </li>
-            </Link>
-            <Link
-              to={`/${searchValue}/Images`}
-              style={{
-                height: "100%",
-              }}
-            >
-              <li
-                className={activeIndex == 1 ? "active" : ""}
-                onClick={() => {
-                  setActiveIndex(1);
+                <li
+                  className={activeIndex == 0 ? "active" : ""}
+                  onClick={() => {
+                    setActiveIndex(0);
+                  }}
+                >
+                  <span className="search-page-nav-list-icon">
+                    <FontAwesomeIcon icon={faSearch} />
+                  </span>
+                  <span className="search-page-nav-list-text">All</span>
+                </li>
+              </Link>
+              <Link
+                to={`/${searchValue}/Images`}
+                style={{
+                  height: "100%",
                 }}
               >
-                <span className="search-page-nav-list-icon">
-                  <ImageOutlinedIcon />
-                </span>
-                <span className="search-page-nav-list-text">Images</span>
-              </li>
-            </Link>
-            <Link
-              to={`/${searchValue}/Videos`}
-              style={{
-                height: "100%",
-              }}
-            >
-              <li
-                className={activeIndex == 2 ? "active" : ""}
-                onClick={() => {
-                  setActiveIndex(2);
+                <li
+                  className={activeIndex == 1 ? "active" : ""}
+                  onClick={() => {
+                    setActiveIndex(1);
+                  }}
+                >
+                  <span className="search-page-nav-list-icon">
+                    <ImageOutlinedIcon />
+                  </span>
+                  <span className="search-page-nav-list-text">Images</span>
+                </li>
+              </Link>
+              <Link
+                to={`/${searchValue}/Videos`}
+                style={{
+                  height: "100%",
                 }}
               >
-                <span className="search-page-nav-list-icon">
-                  <YouTubeIcon />
-                </span>
-                <span className="search-page-nav-list-text">Videos</span>
-              </li>
-            </Link>
-            <Link
-              to={`/${searchValue}/News`}
-              style={{
-                height: "100%",
-              }}
-            >
-              <li
-                className={activeIndex == 3 ? "active" : ""}
-                onClick={() => {
-                  setActiveIndex(3);
+                <li
+                  className={activeIndex == 2 ? "active" : ""}
+                  onClick={() => {
+                    setActiveIndex(2);
+                  }}
+                >
+                  <span className="search-page-nav-list-icon">
+                    <YouTubeIcon />
+                  </span>
+                  <span className="search-page-nav-list-text">Videos</span>
+                </li>
+              </Link>
+              <Link
+                to={`/${searchValue}/News`}
+                style={{
+                  height: "100%",
                 }}
               >
-                <span className="search-page-nav-list-icon">
-                  <FontAwesomeIcon icon={faNewspaper} />
-                </span>
-                <span className="search-page-nav-list-text">News</span>
-              </li>
-            </Link>
-            <Link
-              to={`/${searchValue}/Books`}
-              style={{
-                height: "100%",
-              }}
-            >
-              <li
-                className={activeIndex == 4 ? "active" : ""}
-                onClick={() => {
-                  setActiveIndex(4);
+                <li
+                  className={activeIndex == 3 ? "active" : ""}
+                  onClick={() => {
+                    setActiveIndex(3);
+                  }}
+                >
+                  <span className="search-page-nav-list-icon">
+                    <FontAwesomeIcon icon={faNewspaper} />
+                  </span>
+                  <span className="search-page-nav-list-text">News</span>
+                </li>
+              </Link>
+              <Link
+                to={`/${searchValue}/Books`}
+                style={{
+                  height: "100%",
                 }}
               >
-                <span className="search-page-nav-list-icon">
-                  <BookOutlinedIcon
-                    style={{
-                      height: "20px",
-                      width: "20px",
-                    }}
-                  />
-                </span>
-                <span className="search-page-nav-list-text">Books</span>
-              </li>
-            </Link>
-            <Link
-              to={`/${searchValue}/Shopping`}
-              style={{
-                height: "100%",
-              }}
-            >
-              <li
-                className={activeIndex == 5 ? "active" : ""}
-                onClick={() => {
-                  setActiveIndex(5);
+                <li
+                  className={activeIndex == 4 ? "active" : ""}
+                  onClick={() => {
+                    setActiveIndex(4);
+                  }}
+                >
+                  <span className="search-page-nav-list-icon">
+                    <BookOutlinedIcon
+                      style={{
+                        height: "20px",
+                        width: "20px",
+                      }}
+                    />
+                  </span>
+                  <span className="search-page-nav-list-text">Books</span>
+                </li>
+              </Link>
+              <Link
+                to={`/${searchValue}/Shopping`}
+                style={{
+                  height: "100%",
                 }}
               >
-                <span className="search-page-nav-list-icon">
-                  <TagOutlined />
-                </span>
-                <span className="search-page-nav-list-text">Shopping</span>
-              </li>
-            </Link>
-          </ul>
-          <div className="space-filler"></div>
-          <div className="space-filler"></div>
-          <div className="space-filler"></div>
-        </div>
+                <li
+                  className={activeIndex == 5 ? "active" : ""}
+                  onClick={() => {
+                    setActiveIndex(5);
+                  }}
+                >
+                  <span className="search-page-nav-list-icon">
+                    <TagOutlined />
+                  </span>
+                  <span className="search-page-nav-list-text">Shopping</span>
+                </li>
+              </Link>
+            </ul>
+            <div className="space-filler"></div>
+            <div className="space-filler"></div>
+            <div className="space-filler"></div>
+          </div>
+        )}
       </nav>
       <Divider
         style={{
