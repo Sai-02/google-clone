@@ -56,5 +56,8 @@
   }
   .all-response-content {
     overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
