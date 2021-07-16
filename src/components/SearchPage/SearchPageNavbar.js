@@ -263,7 +263,6 @@ const SearchPageNavbar = () => {
           height: "0.2px",
         }}
       />
-      {/* <hr /> */}
     </>
   );
 };
