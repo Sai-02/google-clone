@@ -35,9 +35,7 @@ export const useFetch = ({ data }) => {
           setAllResponse(res.data);
           setIsSearch(true);
           setIsVoiceSearch(false);
-          setTimeout(() => {
-            setIsAllResponseFound(true);
-          }, 2000);
+          setIsAllResponseFound(true);
         });
     }
   };
