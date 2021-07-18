@@ -44,13 +44,38 @@
   justify-self: start;
   display: grid;
   grid-template-columns: 1fr;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
   p {
     max-width: 20vw;
     overflow: hidden;
     max-height: 1rem;
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-response {
+    grid-template-columns: 1fr;
+    img {
+      width: auto;
+
+      max-width: 100%;
+    }
+  }
+  .image-response-content {
+    width: 100%;
+  }
+  .image-response-img-container {
+    height: auto;
+    min-height: 4rem;
+    width: 100%;
+  }
+  .image-response-text-container {
+    p {
+      max-width: 100%;
+      max-height: auto;
     }
   }
 }
