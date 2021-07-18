@@ -31,6 +31,8 @@ const SearchPageNavbar = ({ navbarFixed }) => {
     setDoSearch,
     isAllResponseFound,
     setIsAllResponseFound,
+    isImageResponseFound,
+    setIsImageResponseFound,
   } = useContext(Data);
   const [activeIndex, setActiveIndex] = useState(0);
   const handleSubmit = (e) => {
@@ -47,6 +49,7 @@ const SearchPageNavbar = ({ navbarFixed }) => {
   const [input, setInput] = useState(searchValue);
   useEffect(() => {
     setIsAllResponseFound(false);
+    setIsImageResponseFound(false);
     setActiveIndex(0);
     setDoSearch(true);
   }, [searchValue]);

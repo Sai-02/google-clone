@@ -1,0 +1,56 @@
+.image-response {
+  padding: 1rem;
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  place-items: center;
+  gap: 1rem;
+
+  img {
+    width: 20vw;
+  }
+}
+.image-response-img-container {
+  width: auto;
+  height: 10rem;
+  overflow: hidden;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(94, 92, 92, 0.7);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(94, 92, 92, 0.7);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(94, 92, 92, 0.7);
+  }
+}
+// =========================================================
+//
+// Image Response Skeleton Container
+//
+// ==========================================================
+
+.image-response-skeleton {
+  height: 10rem;
+  width: 20vw;
+}
+.image-response-content {
+  display: grid;
+  place-items: center;
+  gap: 0.4rem;
+}
+.image-response-text-container {
+  width: 100%;
+  justify-self: start;
+  display: grid;
+  grid-template-columns: 1fr;
+  p {
+    max-width: 20vw;
+    overflow: hidden;
+    max-height: 1rem;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

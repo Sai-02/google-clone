@@ -8,10 +8,12 @@ export { Data };
 function App() {
   const [doSearch, setDoSearch] = useState(false);
   const [allResponse, setAllResponse] = useState({});
+  const [imageResponse, setImageResponse] = useState({});
   const [searchValue, setSearchValue] = useState("");
   const [isSearch, setIsSearch] = useState(false);
   const [isVoiceSearch, setIsVoiceSearch] = useState(false);
   const [isAllResponseFound, setIsAllResponseFound] = useState(false);
+  const [isImageResponseFound, setIsImageResponseFound] = useState(false);
 
   return (
     <BrowserRouter>
@@ -29,6 +31,10 @@ function App() {
           setDoSearch,
           isAllResponseFound,
           setIsAllResponseFound,
+          imageResponse,
+          setImageResponse,
+          isImageResponseFound,
+          setIsImageResponseFound,
         }}
       >
         {isSearch ? <SearchPage /> : <HomePage />}

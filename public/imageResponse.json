@@ -1,0 +1,248 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - codechef",
+                "totalResults": "6570000",
+                "searchTerms": "codechef",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "e18b990d120dcaa52",
+                "searchType": "image"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - codechef",
+                "totalResults": "6570000",
+                "searchTerms": "codechef",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "e18b990d120dcaa52",
+                "searchType": "image"
+            }
+        ]
+    },
+    "context": {
+        "title": "Google-Clone"
+    },
+    "searchInformation": {
+        "searchTime": 0.621446,
+        "formattedSearchTime": "0.62",
+        "totalResults": "6570000",
+        "formattedTotalResults": "6,570,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "CodeChef - Wikipedia",
+            "htmlTitle": "<b>CodeChef</b> - Wikipedia",
+            "link": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Codechef%28new%29_logo.svg/1200px-Codechef%28new%29_logo.svg.png",
+            "displayLink": "en.wikipedia.org",
+            "snippet": "CodeChef - Wikipedia",
+            "htmlSnippet": "<b>CodeChef</b> - Wikipedia",
+            "mime": "image/png",
+            "fileFormat": "image/png",
+            "image": {
+                "contextLink": "https://en.wikipedia.org/wiki/CodeChef",
+                "height": 462,
+                "width": 1200,
+                "byteSize": 88050,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5EWfI93vgSo0OiDkY2nDX9mmJsyLbmxnO_pfNLG8OzK-Zno0pYZJXRo&s",
+                "thumbnailHeight": 58,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "CodeChef - Company Profile | Competitive Programming Community",
+            "htmlTitle": "<b>CodeChef</b> - Company Profile | Competitive Programming Community",
+            "link": "https://static.startuptalky.com/2021/04/codechef-logo-startuptalky.jpg",
+            "displayLink": "startuptalky.com",
+            "snippet": "CodeChef - Company Profile | Competitive Programming Community",
+            "htmlSnippet": "<b>CodeChef</b> - Company Profile | Competitive Programming Community",
+            "mime": "image/jpeg",
+            "fileFormat": "image/jpeg",
+            "image": {
+                "contextLink": "https://startuptalky.com/codechef-success-story/",
+                "height": 675,
+                "width": 1200,
+                "byteSize": 38802,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HGoVMdygC_phuT-nePqkD1H57ZlnaGrai8LK50NOaKUQMq_Yioobk_c&s",
+                "thumbnailHeight": 84,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Codechef by shailendra on Dribbble",
+            "htmlTitle": "<b>Codechef</b> by shailendra on Dribbble",
+            "link": "https://cdn.dribbble.com/users/70628/screenshots/1743345/codechef.png",
+            "displayLink": "dribbble.com",
+            "snippet": "Codechef by shailendra on Dribbble",
+            "htmlSnippet": "<b>Codechef</b> by shailendra on Dribbble",
+            "mime": "image/png",
+            "fileFormat": "image/png",
+            "image": {
+                "contextLink": "https://dribbble.com/shots/1743345-Codechef",
+                "height": 600,
+                "width": 800,
+                "byteSize": 61795,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyOtLkaEy94z76YTrC7VNu2GzfpF3O6MYqyh8KNr33_38MaaXjyFPvww&s",
+                "thumbnailHeight": 107,
+                "thumbnailWidth": 143
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Getting started on CodeChef using JavaScript. | by Shobhit Singh ...",
+            "htmlTitle": "Getting started on <b>CodeChef</b> using JavaScript. | by Shobhit Singh ...",
+            "link": "https://miro.medium.com/max/333/1*1W0-bbmt4iiEpp_pPrS0VQ.png",
+            "displayLink": "shobhitsingh29.medium.com",
+            "snippet": "Getting started on CodeChef using JavaScript. | by Shobhit Singh ...",
+            "htmlSnippet": "Getting started on <b>CodeChef</b> using JavaScript. | by Shobhit Singh ...",
+            "mime": "image/png",
+            "fileFormat": "image/png",
+            "image": {
+                "contextLink": "https://shobhitsingh29.medium.com/getting-started-on-codechef-using-javascript-4529be3d8255",
+                "height": 354,
+                "width": 333,
+                "byteSize": 40438,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlXp_kzb5Em-KOpjYLeYijLHj3ZgMaxEPXNC5hrQh54-03vkuXTpYY&s",
+                "thumbnailHeight": 121,
+                "thumbnailWidth": 114
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "User Certificate | CodeChef",
+            "htmlTitle": "User Certificate | <b>CodeChef</b>",
+            "link": "https://s3.amazonaws.com/codechef_shared/public_certificates/images/certi_2fa1463.jpeg",
+            "displayLink": "www.codechef.com",
+            "snippet": "User Certificate | CodeChef",
+            "htmlSnippet": "User Certificate | <b>CodeChef</b>",
+            "mime": "image/jpeg",
+            "fileFormat": "image/jpeg",
+            "image": {
+                "contextLink": "https://www.codechef.com/certificates/public/2fa1463",
+                "height": 1654,
+                "width": 2339,
+                "byteSize": 173038,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYbRGpP2SfOU2rWUW3m0tWRlJX1Oby3Ift6bSy1GMgWzjxqbtfQWQqJhU&s",
+                "thumbnailHeight": 106,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "CodeChef - SCOE Chapter | LinkedIn",
+            "htmlTitle": "<b>CodeChef</b> - SCOE Chapter | LinkedIn",
+            "link": "https://media-exp3.licdn.com/dms/image/C561BAQErIT3qL_3kRg/company-background_10000/0/1605447319376?e=2159024400&v=beta&t=A6knegImnwJtu2USxkKVR9hVzrQNu9mtAbp6RzgJBtA",
+            "displayLink": "in.linkedin.com",
+            "snippet": "CodeChef - SCOE Chapter | LinkedIn",
+            "htmlSnippet": "<b>CodeChef</b> - SCOE Chapter | LinkedIn",
+            "mime": "image/",
+            "fileFormat": "image/",
+            "image": {
+                "contextLink": "https://in.linkedin.com/company/codechef-scoe-chapter",
+                "height": 2000,
+                "width": 5000,
+                "byteSize": 341679,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyf5JrV92bhgdZP6ZfjRwe5C1kPGJM5Y-PUf_VitgL2A0HkcuWjJjfpXw&s",
+                "thumbnailHeight": 60,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "CodeChef - Wikipedia",
+            "htmlTitle": "<b>CodeChef</b> - Wikipedia",
+            "link": "https://upload.wikimedia.org/wikipedia/en/7/7b/Codechef%28new%29_logo.svg",
+            "displayLink": "en.wikipedia.org",
+            "snippet": "CodeChef - Wikipedia",
+            "htmlSnippet": "<b>CodeChef</b> - Wikipedia",
+            "mime": "image/svg+xml",
+            "fileFormat": "image/svg+xml",
+            "image": {
+                "contextLink": "https://en.wikipedia.org/wiki/CodeChef",
+                "height": 308,
+                "width": 800,
+                "byteSize": 41946,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBx5LgwCslUtsXeyCmVgC5LHB9_Wm7QAZXCWshrA4_muiyh3DSKOGPgA&s",
+                "thumbnailHeight": 55,
+                "thumbnailWidth": 143
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "CodeChef vs CodeForces. Anyone starting with competitive… | by ...",
+            "htmlTitle": "<b>CodeChef</b> vs CodeForces. Anyone starting with competitive… | by ...",
+            "link": "https://miro.medium.com/max/730/1*qY0fWMwPXqbJDQOaxAL2Lg.png",
+            "displayLink": "medium.com",
+            "snippet": "CodeChef vs CodeForces. Anyone starting with competitive… | by ...",
+            "htmlSnippet": "<b>CodeChef</b> vs CodeForces. Anyone starting with competitive… | by ...",
+            "mime": "image/png",
+            "fileFormat": "image/png",
+            "image": {
+                "contextLink": "https://medium.com/@aarnavjindal/codechef-vs-codeforces-3ca4dc996517",
+                "height": 590,
+                "width": 730,
+                "byteSize": 83347,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdv3rZeuBeAJVJ140fvuOxWQJa86Lw8ASEheIRTjsLlvrGOujOFDBKAA&s",
+                "thumbnailHeight": 114,
+                "thumbnailWidth": 141
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "CodeChef - Home | Facebook",
+            "htmlTitle": "<b>CodeChef</b> - Home | Facebook",
+            "link": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=53227312798",
+            "displayLink": "www.facebook.com",
+            "snippet": "CodeChef - Home | Facebook",
+            "htmlSnippet": "<b>CodeChef</b> - Home | Facebook",
+            "mime": "image/",
+            "fileFormat": "image/",
+            "image": {
+                "contextLink": "https://www.facebook.com/CodeChef/",
+                "height": 732,
+                "width": 732,
+                "byteSize": 51873,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQo8Nq-204ArAMzjKbdwXBl5loW1qnAPAW30CyKY8lthjZ77O_SRDb8b9&s",
+                "thumbnailHeight": 141,
+                "thumbnailWidth": 141
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Competitive Programming | Participate & Learn | CodeChef",
+            "htmlTitle": "Competitive Programming | Participate &amp; Learn | <b>CodeChef</b>",
+            "link": "https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png",
+            "displayLink": "www.codechef.com",
+            "snippet": "Competitive Programming | Participate & Learn | CodeChef",
+            "htmlSnippet": "Competitive Programming | Participate &amp; Learn | <b>CodeChef</b>",
+            "mime": "image/png",
+            "fileFormat": "image/png",
+            "image": {
+                "contextLink": "https://www.codechef.com/",
+                "height": 418,
+                "width": 1084,
+                "byteSize": 55272,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNwzORyyG3tAfhqZViz5a4euFz8DNW1y0qUyJlsfAHJEy8D_DuI90XYMo&s",
+                "thumbnailHeight": 58,
+                "thumbnailWidth": 150
+            }
+        }
+    ]
+}
