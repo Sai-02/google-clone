@@ -41,6 +41,7 @@ const ImagesResponse = () => {
                       variant="rect"
                       height={200}
                       key={index}
+                      
                     />
                   </div>
                   <div className="image-response-text-container">
