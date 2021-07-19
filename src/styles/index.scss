@@ -1,9 +1,26 @@
 // Global Styles
-* {
+*,
+ul,
+ol,
+div,
+span,
+section,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
+  font-family: sans-serif;
+  // color: black;
 }
 
 // Global imports
