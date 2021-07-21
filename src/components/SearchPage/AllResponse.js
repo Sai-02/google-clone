@@ -4,7 +4,7 @@ import { Skeleton } from "@material-ui/lab";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
-const AllResponse = ({ searchPageRef }) => {
+const AllResponse = () => {
   const { allResponse, isAllResponseFound } = useContext(Data);
   const { searchInformation, items } = allResponse;
 
