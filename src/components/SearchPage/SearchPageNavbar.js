@@ -67,14 +67,14 @@ const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
             navbarFixed ? "search-page-nav padding-bottom-0" : "search-page-nav"
           }
         >
-          <Link
-            to="/"
-            style={{
-              display: "grid",
-              placeItems: "center",
-            }}
-          >
-            <div className="search-page-nav-image-container">
+          <div className="search-page-nav-image-container">
+            <Link
+              to="/"
+              style={{
+                display: "grid",
+                placeItems: "center",
+              }}
+            >
               <img
                 src={Logo}
                 alt="google image"
@@ -84,8 +84,8 @@ const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
                 }}
                 className="search-page-logo"
               />
-            </div>
-          </Link>
+            </Link>
+          </div>
           <form
             className="search-page-search-bar-container"
             onSubmit={handleSubmit}
