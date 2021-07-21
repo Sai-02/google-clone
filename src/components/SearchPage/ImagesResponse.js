@@ -1,6 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
+import { Modal, Button } from "antd";
+import axios from "axios";
 const ImagesResponse = () => {
   const {
     imageResponse,
@@ -8,27 +10,80 @@ const ImagesResponse = () => {
     isImageResponseFound,
     setIsImageResponseFound,
   } = useContext(Data);
+  const [modalImageSrc, setModalImageSrc] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalLink, setModalLink] = useState("#");
   const { items } = imageResponse;
+  const openInNewTab = () => {
+    window.open(modalImageSrc);
+  };
   return (
     <>
       {isImageResponseFound ? (
-        <section className="image-response">
-          {items.map((item) => {
-            return (
-              <>
-                <article className="image-response-content">
-                  <div className="image-response-img-container">
-                    <img src={item.link} alt="" />
-                  </div>
-                  <div className="image-response-text-container">
-                    <p>{item.title}</p>
-                    <p>{item.displayLink}</p>
-                  </div>
-                </article>
-              </>
-            );
-          })}
-        </section>
+        <>
+          <Modal
+            title={modalTitle}
+            style={{ top: 20 }}
+            visible={openModal}
+            onOk={() => setOpenModal(false)}
+            onCancel={() => setOpenModal(false)}
+            centered
+            footer={[
+              <Button onClick={openInNewTab}>Open</Button>,
+              <Button type="primary">
+                <a href={modalLink} target="_blank" rel="noreferrer">
+                  Visit
+                </a>
+              </Button>,
+              ,
+              <Button
+                type="primary"
+                onClick={() => {
+                  setOpenModal(false);
+                }}
+              >
+                Back
+              </Button>,
+            ]}
+          >
+            <div
+              className="modal-image-container"
+              style={{
+                display: "grid",
+                placeItems: "center",
+                width: "100%",
+              }}
+            >
+              <img src={modalImageSrc} alt={modalTitle} />
+            </div>
+          </Modal>
+          <section className="image-response">
+            {items.map((item) => {
+              return (
+                <>
+                  <article className="image-response-content">
+                    <div
+                      className="image-response-img-container"
+                      onClick={() => {
+                        setModalLink(item.image.contextLink);
+                        setModalImageSrc(item.link);
+                        setModalTitle(item.title);
+                        setOpenModal(true);
+                      }}
+                    >
+                      <img src={item.link} alt="" />
+                    </div>
+                    <div className="image-response-text-container">
+                      <p>{item.title}</p>
+                      <p>{item.displayLink}</p>
+                    </div>
+                  </article>
+                </>
+              );
+            })}
+          </section>
+        </>
       ) : (
         <section className="image-response">
           {[...Array(10)].map((index) => {
@@ -41,7 +96,6 @@ const ImagesResponse = () => {
                       variant="rect"
                       height={200}
                       key={index}
-                      
                     />
                   </div>
                   <div className="image-response-text-container">
