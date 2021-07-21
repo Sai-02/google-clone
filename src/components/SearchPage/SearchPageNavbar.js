@@ -19,7 +19,7 @@ import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useFetch from "../useFetch";
 
-const SearchPageNavbar = ({ navbarFixed }) => {
+const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
   const {
     isSearch,
     setIsSearch,
@@ -50,7 +50,7 @@ const SearchPageNavbar = ({ navbarFixed }) => {
   useEffect(() => {
     setIsAllResponseFound(false);
     setIsImageResponseFound(false);
-    setActiveIndex(0);
+    setActiveIndex(searchPageActiveComponent.current);
     setDoSearch(true);
   }, [searchValue]);
   return (
@@ -164,6 +164,7 @@ const SearchPageNavbar = ({ navbarFixed }) => {
                   className={activeIndex == 0 ? "active" : ""}
                   onClick={() => {
                     setActiveIndex(0);
+                    searchPageActiveComponent.current = 0;
                   }}
                 >
                   <span className="search-page-nav-list-icon">
@@ -182,6 +183,7 @@ const SearchPageNavbar = ({ navbarFixed }) => {
                   className={activeIndex == 1 ? "active" : ""}
                   onClick={() => {
                     setActiveIndex(1);
+                    searchPageActiveComponent.current = 1;
                   }}
                 >
                   <span className="search-page-nav-list-icon">
@@ -200,6 +202,7 @@ const SearchPageNavbar = ({ navbarFixed }) => {
                   className={activeIndex == 2 ? "active" : ""}
                   onClick={() => {
                     setActiveIndex(2);
+                    searchPageActiveComponent.current = 2;
                   }}
                 >
                   <span className="search-page-nav-list-icon">
@@ -218,6 +221,7 @@ const SearchPageNavbar = ({ navbarFixed }) => {
                   className={activeIndex == 3 ? "active" : ""}
                   onClick={() => {
                     setActiveIndex(3);
+                    searchPageActiveComponent.current = 3;
                   }}
                 >
                   <span className="search-page-nav-list-icon">
@@ -236,6 +240,7 @@ const SearchPageNavbar = ({ navbarFixed }) => {
                   className={activeIndex == 4 ? "active" : ""}
                   onClick={() => {
                     setActiveIndex(4);
+                    searchPageActiveComponent.current = 4;
                   }}
                 >
                   <span className="search-page-nav-list-icon">
@@ -259,6 +264,7 @@ const SearchPageNavbar = ({ navbarFixed }) => {
                   className={activeIndex == 5 ? "active" : ""}
                   onClick={() => {
                     setActiveIndex(5);
+                    searchPageActiveComponent.current = 5;
                   }}
                 >
                   <span className="search-page-nav-list-icon">

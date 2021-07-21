@@ -10,11 +10,9 @@ import ImagesResponse from "./ImagesResponse";
 import NewsResponse from "./NewsResponse";
 import ShoppingResponse from "./ShoppingResponse";
 import VideoResponse from "./VideoResponse";
-import useFetch from "../useFetch";
 
 const SearchPage = () => {
   const history = useHistory();
-  const searchPageRef = useRef();
   const [navbarFixed, setNavbarFixed] = useState(false);
   const {
     isVoiceSearch,
@@ -29,12 +27,30 @@ const SearchPage = () => {
     setDoSearch,
   } = useContext(Data);
   useEffect(() => {
-    history.push(`/${searchValue}/all`);
-  }, [isVoiceSearch]);
-  useEffect(() => {
-    console.log("search value is changed");
-    history.push(`/${searchValue}/all`);
-  }, [searchValue]);
+    console.log("search value os changed");
+    switch (searchPageActiveComponent.current) {
+      case 0:
+        history.push(`/${searchValue}/all`);
+        break;
+      case 1:
+        history.push(`/${searchValue}/Images`);
+        break;
+      case 2:
+        history.push(`/${searchValue}/Videos`);
+        break;
+      case 3:
+        history.push(`/${searchValue}/News`);
+        break;
+      case 4:
+        history.push(`/${searchValue}/Books`);
+        break;
+      case 5:
+        history.push(`/${searchValue}/Shopping`);
+        break;
+      default:
+        history.push(`/${searchValue}/all`);
+    }
+  }, [searchValue, isVoiceSearch]);
   const handleScroll = () => {
     if (window.scrollY > 200) {
       setNavbarFixed(true);
@@ -48,6 +64,7 @@ const SearchPage = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const searchPageActiveComponent = useRef(0);
 
   return (
     <>
@@ -55,14 +72,17 @@ const SearchPage = () => {
         <VoiceSearch />
       ) : (
         <>
-          <section className="search-page" ref={searchPageRef}>
+          <section className="search-page">
             {/* Search Page Navbar */}
-            <SearchPageNavbar navbarFixed={navbarFixed} />
+            <SearchPageNavbar
+              navbarFixed={navbarFixed}
+              searchPageActiveComponent={searchPageActiveComponent}
+            />
             {/* End of Search Pagge Navbar */}
 
             <Switch>
               <Route path={`/${searchValue}/all`}>
-                <AllResponse searchPageRef={searchPageRef} />
+                <AllResponse />
               </Route>
               <Route path={`/${searchValue}/Images`}>
                 <ImagesResponse />
