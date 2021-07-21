@@ -1,0 +1,5 @@
+.video-response-container{
+    @include searchPageFormat();
+    padding: 1rem 2rem;
+    max-width: 100%;
+}

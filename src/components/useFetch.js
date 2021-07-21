@@ -7,6 +7,7 @@ export const useFetch = ({ data }) => {
   const searchId = process.env.REACT_APP_Search_Key;
   const imageResponseApiKey = process.env.REACT_APP_IMAGE_API_KEY;
   const imageResponseSearchId = process.env.REACT_APP_IMAGE_SEARCH_ID;
+  const videoResponseApiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
   const {
     searchValue,
     setSearchValue,
@@ -24,6 +25,10 @@ export const useFetch = ({ data }) => {
     setImageResponse,
     isImageResponseFound,
     setIsImageResponseFound,
+    videoResponse,
+    setVideoResponse,
+    isVideoResponseFound,
+    setIsVideoResponseFound,
   } = useContext(Data);
   const getAllResponse = async () => {
     // if (searchValue === "") return;
@@ -55,7 +60,7 @@ export const useFetch = ({ data }) => {
         // )
         .get("../imageResponse.json")
         .then((res) => {
-          console.log("image response is", res);
+          // console.log("image response is", res);
           setDoSearch(false);
           setImageResponse(res.data);
           setIsSearch(true);
@@ -66,9 +71,28 @@ export const useFetch = ({ data }) => {
         });
     }
   };
+  const getVideoResponse = () => {
+    if (doSearch && searchValue !== "") {
+      axios
+        // .get(
+        //   `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchValue}&type=video&key=${videoResponseApiKey}`
+        // )
+        .get("../videoResponse.json")
+        .then((res) => {
+          console.log("video response is", res);
+          setVideoResponse(res.data);
+          setIsSearch(true);
+          setIsVoiceSearch(false);
+          setTimeout(() => {
+            setIsVideoResponseFound(true);
+          }, 5000);
+        });
+    }
+  };
   useEffect(() => {
     if (doSearch) {
       getAllResponse();
+      getVideoResponse();
       getImageResponse();
     }
   }, [doSearch, searchValue]);

@@ -1,0 +1,862 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "6B40Gwvybk_jmMfvapOPpJy47uA",
+    "nextPageToken": "CBkQAA",
+    "regionCode": "IN",
+    "pageInfo": {
+        "totalResults": 133887,
+        "resultsPerPage": 25
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "0r3J-8rv_QyiXgv6m4A_rcX0Bx8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ER8oKX5myE0"
+            },
+            "snippet": {
+                "publishedAt": "2021-07-20T13:18:09Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "MySQL Database - Full Course",
+                "description": "Learn about MySQL Database in this full tutorial course for beginners. This course teaches you not just SQL basics, but it also goes into key database concepts ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ER8oKX5myE0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ER8oKX5myE0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ER8oKX5myE0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-07-20T13:18:09Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "GOm-V6z0hodZW33IIzfj2kjXsNw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "rfscVS0vtbw"
+            },
+            "snippet": {
+                "publishedAt": "2018-07-11T18:00:42Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Learn Python - Full Course for Beginners [Tutorial]",
+                "description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the videos and you'll be a python programmer in no time!",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/rfscVS0vtbw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/rfscVS0vtbw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/rfscVS0vtbw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-07-11T18:00:42Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "VERDTdnPojOTkQV4at9iGN1qonA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "lgb-HfXxWBw"
+            },
+            "snippet": {
+                "publishedAt": "2021-01-15T23:13:36Z",
+                "channelId": "UCs_4QczUJ9jsDtCCqj9Teqg",
+                "title": "Is freeCodeCamp Enough To Get Me a Job? | Review From a Software Engineer",
+                "description": "A lot of people have been asking me Is freeCodeCamp Enough To Get Me a Job? While this answer can be different for everyone the short easy answer is yes, ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/lgb-HfXxWBw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/lgb-HfXxWBw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/lgb-HfXxWBw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Hamzah Amer",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-01-15T23:13:36Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "3h8Np5syAuqTEGrCl9mGpa4hObQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "PkZNo7MFNFg"
+            },
+            "snippet": {
+                "publishedAt": "2018-12-10T14:13:40Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Learn JavaScript - Full Course for Beginners",
+                "description": "This complete 134-part JavaScript tutorial for beginners will teach you everything you need to know to get started with the JavaScript programming language.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/PkZNo7MFNFg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/PkZNo7MFNFg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/PkZNo7MFNFg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-12-10T14:13:40Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "5ZPDt4VSYnnOvNpr06TTjFQOR94",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "KJgsSFOSQv0"
+            },
+            "snippet": {
+                "publishedAt": "2018-08-15T17:52:20Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "C Programming Tutorial for Beginners",
+                "description": "This course will give you a full introduction into all of the core concepts in the C programming language. Want more from Mike? He's starting a coding ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/KJgsSFOSQv0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/KJgsSFOSQv0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/KJgsSFOSQv0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-08-15T17:52:20Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "oTlt5JazgN2-vfT7ShehVoPb8ik",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "zOjov-2OZ0E"
+            },
+            "snippet": {
+                "publishedAt": "2020-04-21T13:45:02Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Introduction to Programming and Computer Science - Full Course",
+                "description": "In this course, you will learn basics of computer programming and computer science. The concepts you learn apply to any and all programming languages and ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/zOjov-2OZ0E/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/zOjov-2OZ0E/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/zOjov-2OZ0E/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-04-21T13:45:02Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "81Sc3cv31kL5tJu5wHjrhwzrpMQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "oBt53YbR9Kk"
+            },
+            "snippet": {
+                "publishedAt": "2020-12-03T14:50:22Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Dynamic Programming - Learn to Solve Algorithmic Problems &amp; Coding Challenges",
+                "description": "Learn how to use Dynamic Programming in this course for beginners. It can help you solve complex programming problems, such as those often seen in ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/oBt53YbR9Kk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/oBt53YbR9Kk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/oBt53YbR9Kk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-12-03T14:50:22Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "iRtaYenwvMq2YKuhpHANBbpxuKM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "HXV3zeQKqGY"
+            },
+            "snippet": {
+                "publishedAt": "2018-07-02T17:13:32Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "SQL Tutorial - Full Database Course for Beginners",
+                "description": "In this course, we'll be looking at database management basics and SQL using the MySQL RDBMS. Want more from Mike? He's starting a coding ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/HXV3zeQKqGY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/HXV3zeQKqGY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/HXV3zeQKqGY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-07-02T17:13:32Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "k-ILKbKIPu9Swy4w0KqhI8GV2vI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "pQN-pnXPaVg"
+            },
+            "snippet": {
+                "publishedAt": "2018-09-18T17:02:21Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "HTML Full Course - Build a Website Tutorial",
+                "description": "Learn the basics of HTML5 and web development in this awesome course for beginners. Want more from Mike? He's starting a coding RPG/Bootcamp ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/pQN-pnXPaVg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/pQN-pnXPaVg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/pQN-pnXPaVg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-09-18T17:02:21Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "HdNElOEx-Yat-nPbZdFIRpXGGEg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "8hly31xKli0"
+            },
+            "snippet": {
+                "publishedAt": "2021-03-18T19:48:53Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Algorithms and Data Structures - Full Course for Beginners from Treehouse",
+                "description": "In this course you will learn about algorithms and data structures, two of the fundamental topics in computer science. There are three main parts to this course: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/8hly31xKli0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/8hly31xKli0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/8hly31xKli0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-03-18T19:48:53Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "0TRgH1EVn4XUkQHHkDppAMuOpBk",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "vLnPwxZdW4Y"
+            },
+            "snippet": {
+                "publishedAt": "2018-08-24T17:11:35Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "C++ Tutorial for Beginners - Full Course",
+                "description": "This course will give you a full introduction into all of the core concepts in C++. Want more from Mike? He's starting a coding RPG/Bootcamp ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/vLnPwxZdW4Y/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/vLnPwxZdW4Y/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/vLnPwxZdW4Y/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-08-24T17:11:35Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Cjkx_56FrfSYMHD_0mT2ynsLtxU",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "nTeuhbP7wdE"
+            },
+            "snippet": {
+                "publishedAt": "2021-07-08T14:30:05Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "React JS Course for Beginners - 2021 Tutorial",
+                "description": "This is a full premium course. Learn React.js from the ground up with fundamentals to more intermediate and advanced topics. You will learn by building a real ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/nTeuhbP7wdE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/nTeuhbP7wdE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/nTeuhbP7wdE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-07-08T14:30:05Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "SIgmwsV2zxoFemNM0zuIA4tePmw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "RBSGKlAvoiM"
+            },
+            "snippet": {
+                "publishedAt": "2019-09-19T14:39:38Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer",
+                "description": "Learn and master the most common data structures in this full course from Google engineer William Fiset. This course teaches data structures to beginners using ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/RBSGKlAvoiM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/RBSGKlAvoiM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/RBSGKlAvoiM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-19T14:39:38Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "8uD9q3PZgIfT3E4AJPDkNee5MY4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Oe421EPjeBE"
+            },
+            "snippet": {
+                "publishedAt": "2021-04-01T12:37:58Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Node.js and Express.js - Full Course",
+                "description": "Learn how to use Node and Express in this comprehensive course. First, you will learn the fundamentals of Node and Express. Then, you will learn to build a ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Oe421EPjeBE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Oe421EPjeBE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Oe421EPjeBE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-04-01T12:37:58Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "T_eYOsYC58KXHTRGqDTxVB1hGGU",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "NKEFWyqJ5XA"
+            },
+            "snippet": {
+                "publishedAt": "2020-06-17T18:56:48Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Microsoft Azure Fundamentals Certification Course (AZ-900) - Pass the exam in 3 hours!",
+                "description": "Learn about Microsoft Azure and pass the Azure Fundamentals exam! The Azure Fundamentals exam is an opportunity to prove knowledge of cloud concepts, ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/NKEFWyqJ5XA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/NKEFWyqJ5XA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/NKEFWyqJ5XA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-06-17T18:56:48Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "FPAW0dAqvSlX6hPp4Ci--zA9NaQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "4UZrsTqkcW4"
+            },
+            "snippet": {
+                "publishedAt": "2020-10-06T14:16:07Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+                "description": "Learn the basics of React in this comprehensive course. You will learn about fundamentals, hooks, context API, react router, custom hooks, and more. React is ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/4UZrsTqkcW4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/4UZrsTqkcW4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/4UZrsTqkcW4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-10-06T14:16:07Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "drAJIr8lchRn-bVvzi0Z7ka6HCY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "IJDJ0kBx2LM"
+            },
+            "snippet": {
+                "publishedAt": "2021-07-19T13:55:48Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Recursion in Programming - Full Course",
+                "description": "Recursion is a powerful technique that helps us bridge the gap between complex problems being solved with elegant code. Within this course, we will break ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/IJDJ0kBx2LM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/IJDJ0kBx2LM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/IJDJ0kBx2LM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-07-19T13:55:48Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "1RFQfEVki3KlEknFR-jWsl9mnCc",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "fis26HvvDII"
+            },
+            "snippet": {
+                "publishedAt": "2020-05-26T16:06:03Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Android Development for Beginners - Full Course",
+                "description": "Learn how to develop an android app from scratch in this full course for beginners. No prior programming experience required! Here is the 2nd part of this ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/fis26HvvDII/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/fis26HvvDII/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/fis26HvvDII/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-05-26T16:06:03Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "p2NC1qSvKpBAw7ZYe5iQI_rlkv0",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "GZvSYJDk-us"
+            },
+            "snippet": {
+                "publishedAt": "2019-12-17T14:55:29Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "APIs for Beginners - How to use an API (Full Course / Tutorial)",
+                "description": "What is an API? Learn all about APIs (Application Programming Interfaces) in this full tutorial for beginners. You will learn what APIs do, why APIs exist, and the ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/GZvSYJDk-us/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/GZvSYJDk-us/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/GZvSYJDk-us/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-12-17T14:55:29Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "N0mTmxoHnjigpcfOq6AdpOC_DJA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "oXlwWbU8l2o"
+            },
+            "snippet": {
+                "publishedAt": "2020-11-03T14:18:52Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "OpenCV Course - Full Tutorial with Python",
+                "description": "Learn everything you need to know about OpenCV in this full course for beginners. You will learn the very basics (reading images and videos, image ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/oXlwWbU8l2o/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/oXlwWbU8l2o/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/oXlwWbU8l2o/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-11-03T14:18:52Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "y3x7_Tj5OBFenbK0yUKWDYzBOw8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "3Kq1MIfTWCE"
+            },
+            "snippet": {
+                "publishedAt": "2019-07-29T15:14:39Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Full Ethical Hacking Course - Network Penetration Testing for Beginners (2019)",
+                "description": "Learn network penetration testing / ethical hacking in this full tutorial course for beginners. This course teaches everything you need to know to get started with ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3Kq1MIfTWCE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3Kq1MIfTWCE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3Kq1MIfTWCE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-07-29T15:14:39Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "pXjsjlBSI-58VoCCssu6LHGdefA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "aoQ6S1a32j8"
+            },
+            "snippet": {
+                "publishedAt": "2021-01-13T13:48:35Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "How to Make a Landing Page using HTML, SCSS, and JavaScript - Full Course",
+                "description": "Learn how to build a responsive website from scratch with HTML, CSS, and JavaScript. ✏️ This course was created by Jessica Chan. Jessica's YouTube ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/aoQ6S1a32j8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/aoQ6S1a32j8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/aoQ6S1a32j8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-01-13T13:48:35Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "8VoY9N08R4h6LJFF3IIra3Ylvjs",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "8ext9G7xspg"
+            },
+            "snippet": {
+                "publishedAt": "2020-12-09T16:03:12Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "12 Beginner Python Projects - Coding Course",
+                "description": "Improve your Python skills by following along with 12 different Python project tutorials. Course developed by Kylie Ying. Check out her YouTube channel: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/8ext9G7xspg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/8ext9G7xspg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/8ext9G7xspg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "freeCodeCamp.org",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-12-09T16:03:12Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "XizgN0syNqJp83gedTsEPXugTM4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Y9mTrj0oR8A"
+            },
+            "snippet": {
+                "publishedAt": "2020-10-19T00:25:53Z",
+                "channelId": "UCUOMtzQmEmhIAF8G_cha_Xw",
+                "title": "The Odin Project vs freeCodeCamp - What&#39;s The Best Free Website To Learn Web Development in 2021?",
+                "description": "Many people often ask which website is better to learn to code on, freeCodeCamp or The Odin Project? I used both when I was learning how to code and this ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Y9mTrj0oR8A/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Y9mTrj0oR8A/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Y9mTrj0oR8A/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Dorian Develops",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-10-19T00:25:53Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "PROo66GmL8xinfYGoXY6mnrD10s",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "JIcZ_Jc2FCA"
+            },
+            "snippet": {
+                "publishedAt": "2019-10-25T01:04:24Z",
+                "channelId": "UC54NcJvLCvM2CNaBjd5j6HA",
+                "title": "A working developer reviews freeCodeCamp || Is freeCodeCamp worth it in 2020?",
+                "description": "Escape tutorial hell! Level up, land a job and get a raise (start today): https://www.realtoughcandy.io If you're a self-taught developer, odds are you've heard of ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JIcZ_Jc2FCA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JIcZ_Jc2FCA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JIcZ_Jc2FCA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "RealToughCandy",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-10-25T01:04:24Z"
+            }
+        }
+    ]
+}

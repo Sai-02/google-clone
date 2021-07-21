@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { Data } from "../../App";
+import { Skeleton } from "@material-ui/lab";
 
 const VideoResponse = () => {
-    return (
-        <div>
-            <h1>video response</h1>
-        </div>
-    )
-}
+  const {
+    videoResponse,
+    setVideoResponse,
+    isVideoResponseFound,
+    setIsVideoResponseFound,
+  } = useContext(Data);
+  return (
+    <section className="video-response-container">
+      <div className="space-filler"></div>
+      <div className="video-response">video response</div>
+      <div className="space-filler"></div>
+      <div className="space-filler"></div>
+      <div className="space-filler"></div>
+    </section>
+  );
+};
 
-export default VideoResponse
+export default VideoResponse;
