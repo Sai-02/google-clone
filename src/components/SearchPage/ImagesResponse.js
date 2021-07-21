@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
 import { Modal, Button } from "antd";
-import axios from "axios";
 const ImagesResponse = () => {
   const {
     imageResponse,
