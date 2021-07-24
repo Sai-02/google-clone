@@ -31,7 +31,7 @@
 }
 .video-response-info {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 2fr 9fr;
   place-items: center;
   gap: 0.6rem;
 }
@@ -61,16 +61,19 @@
   overflow: hidden;
   display: grid;
   place-items: center;
+  width: 100%;
 }
 .video-response-para {
   color: #4d5156;
   font-family: arial, sans-serif;
   font-size: 14px;
+  width: 100%;
 }
 .video-response-date {
   color: #70757a;
   line-height: 1.58;
   justify-self: flex-start;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
