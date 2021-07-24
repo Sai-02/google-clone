@@ -33,6 +33,8 @@ const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
     setIsAllResponseFound,
     isImageResponseFound,
     setIsImageResponseFound,
+    isVideoResponseFound,
+    setIsVideoResponseFound,
   } = useContext(Data);
   const [activeIndex, setActiveIndex] = useState(0);
   const handleSubmit = (e) => {
@@ -50,6 +52,7 @@ const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
   useEffect(() => {
     setIsAllResponseFound(false);
     setIsImageResponseFound(false);
+    setIsVideoResponseFound(false);
     setActiveIndex(searchPageActiveComponent.current);
     setDoSearch(true);
   }, [searchValue]);
