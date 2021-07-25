@@ -93,7 +93,7 @@ export const useFetch = ({ data }) => {
     if (doSearch && searchValue !== "") {
       axios
         // .get(
-        //   `https://gnews.io/api/v4/search?q=${searchValue}&token=${newResponseApiKey}`
+        //   `https://gnews.io/api/v4/search?q=${searchValue}&lang=en&token=${newResponseApiKey}`
         // )
         .get("../newsResponse.json")
         .then((res) => {

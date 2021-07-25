@@ -1,42 +1,6 @@
 {
-    "totalArticles": 281,
+    "totalArticles": 188,
     "articles": [
-        {
-            "title": "FSR pode ser implementado em quase qualquer jogo em Vulkan no Linux",
-            "description": "No último domingo (18) um modder chamado Georg \"DadSchoorse\" Lehmann compartilhou no GitHub uma forma de implementar o FidelityFX Super Resolution (nova...",
-            "content": "FSR pode ser implementado em quase qualquer jogo em Vulkan no Linux Foi possível adicionar a tecnologia em Forza Horizon 4 dessa forma\nNo último domingo (18) um modder chamado Georg \"DadSchoorse\" Lehmann compartilhou no GitHub uma forma de implementa... [2762 chars]",
-            "url": "https://adrenaline.com.br/noticias/v/70059/fsr-pode-ser-implementado-em-quase-qualquer-jogo-em-vulkan-no-linux",
-            "image": "https://adrenaline.com.br/uploads/chamadas/chamada-fidelity-fx-amd.jpg",
-            "publishedAt": "2021-07-21T20:20:00Z",
-            "source": {
-                "name": "Adrenaline",
-                "url": "https://adrenaline.com.br"
-            }
-        },
-        {
-            "title": "O que é GitHub e como usá-lo",
-            "description": "Você sabe o que é o GitHub e como usá-lo? A plataforma funciona como uma rede para que desenvolvedores possam criar projetos colaborativos com seus códigos",
-            "content": "Profissionais dos mais variados segmentos utilizam portfólios para exporem seus trabalhos e apresentá-los para mostrar sua expertise profissional. Jornalistas criam blogs ou sites, assim como fotógrafos ou mesmo designers. Mas e quanto aos programado... [2737 chars]",
-            "url": "https://canaltech.com.br/internet/github-o-que-e-como-usar/",
-            "image": "https://t.ctcdn.com.br/naG7_YP3NyuzHOPkeW5jhMq7-r0=/135x0:1858x971/1400x788/smart/i329956.jpeg",
-            "publishedAt": "2021-07-19T17:30:00Z",
-            "source": {
-                "name": "Canaltech",
-                "url": "https://canaltech.com.br"
-            }
-        },
-        {
-            "title": "مايكروسوفت تحارب شركات بيع برامج القرصنة",
-            "description": "مايكروسوفت | تعتبر حرب شركة مايكروسوفت ضد الشركات الخاصة التي تبيع برامج القرصنة السيبرانية ليست بالأمر الجديد. وفي العام الماضي، نسقت الشركة مع جوجل وسيسكو و GitHub و",
-            "content": "تعتبر حرب شركة مايكروسوفت ضد الشركات الخاصة التي تبيع برامج القرصنة السيبرانية ليست بالأمر الجديد.\nوفي العام الماضي، نسقت الشركة مع جوجل وسيسكو و GitHub و VMWare والمزيد لتقديم موجد ضد NSO Group، المعروفة ببرنامجها Pegasus المستخدم لاختراق واتساب.\nوت... [1883 chars]",
-            "url": "https://aitnews.com/2021/07/16/%d9%85%d8%a7%d9%8a%d9%83%d8%b1%d9%88%d8%b3%d9%88%d9%81%d8%aa-%d8%aa%d8%ad%d8%a7%d8%b1%d8%a8-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d8%a8%d9%8a%d8%b9-%d8%a8%d8%b1%d8%a7%d9%85%d8%ac-%d8%a7%d9%84%d9%82%d8%b1/",
-            "image": "https://aitnews.com/wp-content/uploads/2021/07/1583238693_mika-baumeister-j5yogzldpsi-unsplash_story.jpg",
-            "publishedAt": "2021-07-16T10:43:09Z",
-            "source": {
-                "name": "البوابة العربية للأخبار التقنية AITnews",
-                "url": "https://aitnews.com"
-            }
-        },
         {
             "title": "AMD FidelityFX Super Resolution Lights Up GitHub As Hot Game Engines Add Support",
             "description": "AMD is also making FSR available via GPUOpen, which means anyone can access the source code for free using an open-source MIT License.",
@@ -47,30 +11,6 @@
             "source": {
                 "name": "Hot Hardware",
                 "url": "https://hothardware.com"
-            }
-        },
-        {
-            "title": "Pourquoi les développeurs se méfient-ils de Github Copilot, l’intelligence artificielle censée les aider ?",
-            "description": "Depuis la sortie à la fin du mois de juin 2021 de Copilot, l'intelligence artificielle de programmation de Github, le logiciel est au coeur de nombreux débats chez les développeurs et développeuses. Numerama leur a demandé leurs avis : véritable outil du futur permettant de coder plus vite ou poudre au yeux ?",
-            "content": "Depuis la sortie à la fin du mois de juin 2021 de Copilot, l'intelligence artificielle de programmation de Github, le logiciel est au coeur de nombreux débats chez les développeurs et développeuses. Numerama leur a demandé leurs avis : véritable outi... [13396 chars]",
-            "url": "https://www.numerama.com/tech/723761-pourquoi-les-developpeurs-se-mefient-ils-de-github-copilot-lintelligence-artificielle-censee-les-aider.html",
-            "image": "https://www.numerama.com/wp-content/uploads/2021/07/copilot-github-cover-1024x576.jpg",
-            "publishedAt": "2021-07-12T13:00:20Z",
-            "source": {
-                "name": "Numerama",
-                "url": "https://www.numerama.com"
-            }
-        },
-        {
-            "title": "GitHub fecha site que leiloava mulheres muçulmanas online sem consentimento",
-            "description": "A página colocava artistas, jornalistas, ativistas e outras mulheres muçulmanas de destaque \"à venda\" com análises negativas e comentários depreciativos",
-            "content": "A plataforma de hospedagem de código-fonte GitHub tirou do ar um site que comercializava mulheres como se fossem objetos. A página estava no ar desde domingo e tinha o nome de Sulli Deals, uma expressão depreciativa usada para se referir a muçulmanas... [2027 chars]",
-            "url": "https://canaltech.com.br/internet/github-fecha-site-que-leiloava-mulheres-muculmanas-online-sem-consentimento-189447/",
-            "image": "https://t.ctcdn.com.br/zdizEjFs4a99btSD5sCZUwYznXk=/1400x788/smart/i472877.jpeg",
-            "publishedAt": "2021-07-12T12:10:00Z",
-            "source": {
-                "name": "Canaltech",
-                "url": "https://canaltech.com.br"
             }
         },
         {
@@ -119,6 +59,66 @@
             "source": {
                 "name": "The Verge",
                 "url": "https://www.theverge.com"
+            }
+        },
+        {
+            "title": "Why Are People Criticising GitHub Copilot?",
+            "description": "Copilot works well with languages such as Python, TypeScript, Javascript, Ruby, and Go.",
+            "content": "Last week, Microsoft and OpenAI released the technical preview of GitHub Copilot, an AI-based assistant to help programmers write better codes. Not to be confused with autofill, this assistant takes context from the code being worked on to suggest su... [5964 chars]",
+            "url": "https://analyticsindiamag.com/why-are-people-criticising-github-copilot/",
+            "image": "https://analyticsindiamag.com/wp-content/uploads/2021/07/Copilot_AIM-1.jpg",
+            "publishedAt": "2021-07-07T11:30:00Z",
+            "source": {
+                "name": "Analytics India Magazine",
+                "url": "https://analyticsindiamag.com"
+            }
+        },
+        {
+            "title": "What OpenAI and GitHub’s 'AI pair programmer' means for the software industry",
+            "description": "GitHub's Copilot, AI-powered programming built on top of GPT-3, hints at the business of large language models.",
+            "content": "Where does your enterprise stand on the AI adoption curve? Take our AI survey to find out.\nOpenAI has once again made the headlines, this time with Copilot, an AI-powered programming tool jointly built with GitHub. Built on top of GPT-3, OpenAI’s fam... [11103 chars]",
+            "url": "https://venturebeat.com/2021/07/06/what-openai-and-githubs-ai-pair-programmer-means-for-the-software-industry/",
+            "image": "https://venturebeat.com/wp-content/uploads/2017/06/software-e1625591248191.jpg?w=1200&strip=all",
+            "publishedAt": "2021-07-06T18:35:36Z",
+            "source": {
+                "name": "VentureBeat",
+                "url": "https://venturebeat.com"
+            }
+        },
+        {
+            "title": "Experts debate whether GitHub’s latest AI tool violates copyright law",
+            "description": "GitHub’s impressive new code-assisting AI tool called Copilot is receiving both praise and criticism.",
+            "content": "GitHub’s impressive new code-assisting AI tool called Copilot is receiving both praise and criticism.\nCopilot draws context from the code that a developer is working on and can suggest entire lines or functions. The system, from OpenAI, claims to be ... [2327 chars]",
+            "url": "https://jimmyspost.com/experts-debate-whether-githubs-latest-ai-tool-violates-copyright-law",
+            "image": "https://jimmyspost.com/wp-content/uploads/2021/07/Experts-debate-whether-GitHubs-latest-AI-tool-violates-copyright-law-1024x683.jpg",
+            "publishedAt": "2021-07-06T04:00:00Z",
+            "source": {
+                "name": "Jimmys Post",
+                "url": "https://jimmyspost.com"
+            }
+        },
+        {
+            "title": "The Coding Assistant From Microsoft & OpenAI",
+            "description": "Code suggested by GitHub Copilot should be carefully tested, reviewed, and vetted, like any other code.",
+            "content": "OpenAI and Microsoft have come together to release a technical preview of GitHub Copilot, an AI-based tool that helps programmers write better code. Copilot takes context from the code being worked on and suggests whole lines and functions.\nMicrosoft... [4531 chars]",
+            "url": "https://analyticsindiamag.com/tech-behind-github-copilot-the-coding-assistant-from-microsoft-openai/",
+            "image": "https://analyticsindiamag.com/wp-content/uploads/2021/07/Copilot_AIM.jpg",
+            "publishedAt": "2021-07-05T09:30:00Z",
+            "source": {
+                "name": "Analytics India Magazine",
+                "url": "https://analyticsindiamag.com"
+            }
+        },
+        {
+            "title": "Github’s Copilot, Million Dollar Code Auction And More: Weekly Top News",
+            "description": "GitHub Copilot, which is powered by OpenAI Codex, draws context from comments and code, and suggests individual lines instantly.",
+            "content": "The World Wide Web’s DNA has been auctioned. Tim Berners Lee’s source code powers the internet as we know today, was put on auction last month by Sotheby’s. A non-fungible token of the original code for the World Wide Web has sold for $5.4 million in... [5289 chars]",
+            "url": "https://analyticsindiamag.com/githib-copilot-tim-berners-lee-nft-top-news/",
+            "image": "https://analyticsindiamag.com/wp-content/uploads/2021/07/top-tech-news-july-2021.jpeg",
+            "publishedAt": "2021-07-04T04:30:00Z",
+            "source": {
+                "name": "Analytics India Magazine",
+                "url": "https://analyticsindiamag.com"
             }
         }
     ]
