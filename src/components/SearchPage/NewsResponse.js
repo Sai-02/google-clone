@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const NewsResponse = () => {
-    return (
-        <div>
-            <h1>news response</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>news response</h1>
+    </div>
+  );
+};
 
-export default NewsResponse
+export default NewsResponse;

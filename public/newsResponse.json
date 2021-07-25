@@ -1,0 +1,125 @@
+{
+    "totalArticles": 281,
+    "articles": [
+        {
+            "title": "FSR pode ser implementado em quase qualquer jogo em Vulkan no Linux",
+            "description": "No último domingo (18) um modder chamado Georg \"DadSchoorse\" Lehmann compartilhou no GitHub uma forma de implementar o FidelityFX Super Resolution (nova...",
+            "content": "FSR pode ser implementado em quase qualquer jogo em Vulkan no Linux Foi possível adicionar a tecnologia em Forza Horizon 4 dessa forma\nNo último domingo (18) um modder chamado Georg \"DadSchoorse\" Lehmann compartilhou no GitHub uma forma de implementa... [2762 chars]",
+            "url": "https://adrenaline.com.br/noticias/v/70059/fsr-pode-ser-implementado-em-quase-qualquer-jogo-em-vulkan-no-linux",
+            "image": "https://adrenaline.com.br/uploads/chamadas/chamada-fidelity-fx-amd.jpg",
+            "publishedAt": "2021-07-21T20:20:00Z",
+            "source": {
+                "name": "Adrenaline",
+                "url": "https://adrenaline.com.br"
+            }
+        },
+        {
+            "title": "O que é GitHub e como usá-lo",
+            "description": "Você sabe o que é o GitHub e como usá-lo? A plataforma funciona como uma rede para que desenvolvedores possam criar projetos colaborativos com seus códigos",
+            "content": "Profissionais dos mais variados segmentos utilizam portfólios para exporem seus trabalhos e apresentá-los para mostrar sua expertise profissional. Jornalistas criam blogs ou sites, assim como fotógrafos ou mesmo designers. Mas e quanto aos programado... [2737 chars]",
+            "url": "https://canaltech.com.br/internet/github-o-que-e-como-usar/",
+            "image": "https://t.ctcdn.com.br/naG7_YP3NyuzHOPkeW5jhMq7-r0=/135x0:1858x971/1400x788/smart/i329956.jpeg",
+            "publishedAt": "2021-07-19T17:30:00Z",
+            "source": {
+                "name": "Canaltech",
+                "url": "https://canaltech.com.br"
+            }
+        },
+        {
+            "title": "مايكروسوفت تحارب شركات بيع برامج القرصنة",
+            "description": "مايكروسوفت | تعتبر حرب شركة مايكروسوفت ضد الشركات الخاصة التي تبيع برامج القرصنة السيبرانية ليست بالأمر الجديد. وفي العام الماضي، نسقت الشركة مع جوجل وسيسكو و GitHub و",
+            "content": "تعتبر حرب شركة مايكروسوفت ضد الشركات الخاصة التي تبيع برامج القرصنة السيبرانية ليست بالأمر الجديد.\nوفي العام الماضي، نسقت الشركة مع جوجل وسيسكو و GitHub و VMWare والمزيد لتقديم موجد ضد NSO Group، المعروفة ببرنامجها Pegasus المستخدم لاختراق واتساب.\nوت... [1883 chars]",
+            "url": "https://aitnews.com/2021/07/16/%d9%85%d8%a7%d9%8a%d9%83%d8%b1%d9%88%d8%b3%d9%88%d9%81%d8%aa-%d8%aa%d8%ad%d8%a7%d8%b1%d8%a8-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d8%a8%d9%8a%d8%b9-%d8%a8%d8%b1%d8%a7%d9%85%d8%ac-%d8%a7%d9%84%d9%82%d8%b1/",
+            "image": "https://aitnews.com/wp-content/uploads/2021/07/1583238693_mika-baumeister-j5yogzldpsi-unsplash_story.jpg",
+            "publishedAt": "2021-07-16T10:43:09Z",
+            "source": {
+                "name": "البوابة العربية للأخبار التقنية AITnews",
+                "url": "https://aitnews.com"
+            }
+        },
+        {
+            "title": "AMD FidelityFX Super Resolution Lights Up GitHub As Hot Game Engines Add Support",
+            "description": "AMD is also making FSR available via GPUOpen, which means anyone can access the source code for free using an open-source MIT License.",
+            "content": "AMD officially launched FidelityFX Super Resolution (FSR) last month, and the company has already announced a big update for gamers. For those that aren't familiar with FSR, it's a spatial upscaling technology that allows game engines to, for example... [2691 chars]",
+            "url": "https://hothardware.com/news/amd-fidelityfx-super-resolution-goes-open-source-as-hot-game-titles-engines-add-support",
+            "image": "https://images.hothardware.com/contentimages/newsitem/55703/content/amd-fsr-hero.jpeg",
+            "publishedAt": "2021-07-15T17:43:00Z",
+            "source": {
+                "name": "Hot Hardware",
+                "url": "https://hothardware.com"
+            }
+        },
+        {
+            "title": "Pourquoi les développeurs se méfient-ils de Github Copilot, l’intelligence artificielle censée les aider ?",
+            "description": "Depuis la sortie à la fin du mois de juin 2021 de Copilot, l'intelligence artificielle de programmation de Github, le logiciel est au coeur de nombreux débats chez les développeurs et développeuses. Numerama leur a demandé leurs avis : véritable outil du futur permettant de coder plus vite ou poudre au yeux ?",
+            "content": "Depuis la sortie à la fin du mois de juin 2021 de Copilot, l'intelligence artificielle de programmation de Github, le logiciel est au coeur de nombreux débats chez les développeurs et développeuses. Numerama leur a demandé leurs avis : véritable outi... [13396 chars]",
+            "url": "https://www.numerama.com/tech/723761-pourquoi-les-developpeurs-se-mefient-ils-de-github-copilot-lintelligence-artificielle-censee-les-aider.html",
+            "image": "https://www.numerama.com/wp-content/uploads/2021/07/copilot-github-cover-1024x576.jpg",
+            "publishedAt": "2021-07-12T13:00:20Z",
+            "source": {
+                "name": "Numerama",
+                "url": "https://www.numerama.com"
+            }
+        },
+        {
+            "title": "GitHub fecha site que leiloava mulheres muçulmanas online sem consentimento",
+            "description": "A página colocava artistas, jornalistas, ativistas e outras mulheres muçulmanas de destaque \"à venda\" com análises negativas e comentários depreciativos",
+            "content": "A plataforma de hospedagem de código-fonte GitHub tirou do ar um site que comercializava mulheres como se fossem objetos. A página estava no ar desde domingo e tinha o nome de Sulli Deals, uma expressão depreciativa usada para se referir a muçulmanas... [2027 chars]",
+            "url": "https://canaltech.com.br/internet/github-fecha-site-que-leiloava-mulheres-muculmanas-online-sem-consentimento-189447/",
+            "image": "https://t.ctcdn.com.br/zdizEjFs4a99btSD5sCZUwYznXk=/1400x788/smart/i472877.jpeg",
+            "publishedAt": "2021-07-12T12:10:00Z",
+            "source": {
+                "name": "Canaltech",
+                "url": "https://canaltech.com.br"
+            }
+        },
+        {
+            "title": "OpenAI warns AI behind GitHub's Copilot may be susceptible to bias",
+            "description": "Codex, the AI model powering GitHub's Copilot feature, might be susceptible to biases, OpenAI admits in a new research paper.",
+            "content": "Join AI & data leaders at Transform 2021 on July 12th for the AI/ML Automation Technology Summit. Register today.\nLet the OSS Enterprise newsletter guide your open source journey! Sign up here.\nLast month, GitHub and OpenAI launched Copilot, a servic... [6296 chars]",
+            "url": "https://venturebeat.com/2021/07/08/openai-warns-ai-behind-githubs-copilot-may-be-susceptible-to-bias/",
+            "image": "https://venturebeat.com/wp-content/uploads/2020/01/github-1-e1579720491957.jpg?w=1200&strip=all",
+            "publishedAt": "2021-07-08T15:30:41Z",
+            "source": {
+                "name": "VentureBeat",
+                "url": "https://venturebeat.com"
+            }
+        },
+        {
+            "title": "Delhi Police registers FIR in 'Sulli deals' case, sends notice to website host GitHub",
+            "description": "Delhi Police registered the case under IPC Section 354A (punishment for sexual harassment) on a complaint received through National Cybercrime Reporting Portal.",
+            "content": "Text Size: A- A+\nNew Delhi: The Delhi Police has registered a case against unknown persons, days after 90 Muslim women were put ‘on sale’ on a now-defunct website called ‘Sulli Deals’. ‘Sulli’ is a derogatory slang for Muslim women.\nPrem Nath, Joint ... [3801 chars]",
+            "url": "https://theprint.in/india/delhi-police-registers-fir-in-sulli-deals-case-sends-notice-to-website-host-github/692439/",
+            "image": "https://static.theprint.in/wp-content/uploads/2021/07/photo-2.jpg",
+            "publishedAt": "2021-07-08T14:13:19Z",
+            "source": {
+                "name": "ThePrint",
+                "url": "https://theprint.in"
+            }
+        },
+        {
+            "title": "Microsoft rolls out critical Windows security patch for 'PrintNightmare' bug",
+            "description": "Last week, security researchers accidentally published the Proof-of-Concept (PoC) exploit for the vulnerability dubbed 'PrintNightmare' in Windows OS on GitHub.",
+            "content": "Last week, security researchers accidentally published the Proof-of-Concept (PoC) exploit for the vulnerability dubbed 'PrintNightmare' in Windows OS on GitHub.\nThe zero-day security loophole (CVE-2021-34527) has been detected in the Print Spooler se... [1309 chars]",
+            "url": "https://www.deccanherald.com/specials/microsoft-rolls-out-critical-windows-security-patch-for-printnightmare-bug-1006108.html",
+            "image": "https://www.deccanherald.com/sites/dh/files/articleimages/2021/07/07/malware-pixabay-1006108-1625681882.jpg",
+            "publishedAt": "2021-07-07T23:48:02Z",
+            "source": {
+                "name": "Deccan Herald",
+                "url": "https://www.deccanherald.com"
+            }
+        },
+        {
+            "title": "GitHub’s automatic coding tool rests on untested legal ground",
+            "description": "GitHub’s new Copilot tool has learned from public code online, but there isn’t a clear answer as to whether it’s legal. A future court decision could impact how AI algorithms learn from the open source development community.",
+            "content": "Just days after GitHub announced its new Copilot tool, which generates complementary code for programmers’ projects, web developer Kyle Peacock tweeted an oddity he had noticed.\n“I love to learn new things and build things,” the algorithm wrote, when... [4548 chars]",
+            "url": "https://www.theverge.com/2021/7/7/22561180/github-copilot-legal-copyright-fair-use-public-code",
+            "image": "https://cdn.vox-cdn.com/thumbor/T7TtNvHFYDIqh93AXqFVtgCoC4w=/0x278:3888x2314/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22702238/1231387819.jpg",
+            "publishedAt": "2021-07-07T12:00:00Z",
+            "source": {
+                "name": "The Verge",
+                "url": "https://www.theverge.com"
+            }
+        }
+    ]
+}

@@ -8,6 +8,7 @@ export const useFetch = ({ data }) => {
   const imageResponseApiKey = process.env.REACT_APP_IMAGE_API_KEY;
   const imageResponseSearchId = process.env.REACT_APP_IMAGE_SEARCH_ID;
   const videoResponseApiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
+  const newResponseApiKey = process.env.REACT_APP_NEWS_API_KEY;
   const {
     searchValue,
     setSearchValue,
@@ -29,6 +30,10 @@ export const useFetch = ({ data }) => {
     setVideoResponse,
     isVideoResponseFound,
     setIsVideoResponseFound,
+    newsResponse,
+    setNewsResponse,
+    isNewsResponseFound,
+    setIsNewsResponseFound,
   } = useContext(Data);
   const getAllResponse = async () => {
     // if (searchValue === "") return;
@@ -39,9 +44,6 @@ export const useFetch = ({ data }) => {
         // )
         .get("../allResponse.json")
         .then((res) => {
-          console.log(res);
-          // setDoSearch(false);
-
           setAllResponse(res.data);
           setIsSearch(true);
           setIsVoiceSearch(false);
@@ -60,7 +62,6 @@ export const useFetch = ({ data }) => {
         // )
         .get("../imageResponse.json")
         .then((res) => {
-          // console.log("image response is", res);
           setDoSearch(false);
           setImageResponse(res.data);
           setIsSearch(true);
@@ -79,7 +80,6 @@ export const useFetch = ({ data }) => {
         // )
         .get("../videoResponse.json")
         .then((res) => {
-          console.log("video response is", res);
           setVideoResponse(res.data);
           setIsSearch(true);
           setIsVoiceSearch(false);
@@ -89,10 +89,30 @@ export const useFetch = ({ data }) => {
         });
     }
   };
+  const getNewsResponse = () => {
+    if (doSearch && searchValue !== "") {
+      axios
+        // .get(
+        //   `https://gnews.io/api/v4/search?q=${searchValue}&token=${newResponseApiKey}`
+        // )
+        .get("../newsResponse.json")
+        .then((res) => {
+          console.log("news response is", res);
+          setNewsResponse(res.data);
+          setIsSearch(true);
+          setIsVoiceSearch(false);
+          setTimeout(() => {
+            setIsNewsResponseFound(true);
+          }, 5000);
+        });
+    }
+  };
+
   useEffect(() => {
     if (doSearch) {
       getAllResponse();
       getVideoResponse();
+      getNewsResponse();
       getImageResponse();
     }
   }, [doSearch, searchValue]);
