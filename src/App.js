@@ -11,6 +11,7 @@ function App() {
   const [imageResponse, setImageResponse] = useState({});
   const [videoResponse, setVideoResponse] = useState({});
   const [newsResponse, setNewsResponse] = useState({});
+  const [booksResponse, setBooksResponse] = useState({});
   const [searchValue, setSearchValue] = useState("");
   const [isSearch, setIsSearch] = useState(false);
   const [isVoiceSearch, setIsVoiceSearch] = useState(false);
@@ -18,6 +19,7 @@ function App() {
   const [isImageResponseFound, setIsImageResponseFound] = useState(false);
   const [isVideoResponseFound, setIsVideoResponseFound] = useState(false);
   const [isNewsResponseFound, setIsNewsResponseFound] = useState(false);
+  const [isBooksResponseFound, setIsBooksResponseFound] = useState(false);
 
   return (
     <BrowserRouter>
@@ -47,6 +49,10 @@ function App() {
           setNewsResponse,
           isNewsResponseFound,
           setIsNewsResponseFound,
+          booksResponse,
+          setBooksResponse,
+          isBooksResponseFound,
+          setIsBooksResponseFound,
         }}
       >
         {isSearch ? <SearchPage /> : <HomePage />}

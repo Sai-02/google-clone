@@ -9,6 +9,7 @@ export const useFetch = ({ data }) => {
   const imageResponseSearchId = process.env.REACT_APP_IMAGE_SEARCH_ID;
   const videoResponseApiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
   const newResponseApiKey = process.env.REACT_APP_NEWS_API_KEY;
+  const booksResponseApiKey = process.env.REACT_APP_BOOKS_API_KEY;
   const {
     searchValue,
     setSearchValue,
@@ -34,6 +35,10 @@ export const useFetch = ({ data }) => {
     setNewsResponse,
     isNewsResponseFound,
     setIsNewsResponseFound,
+    booksResponse,
+    setBooksResponse,
+    isBooksResponseFound,
+    setIsBooksResponseFound,
   } = useContext(Data);
   const getAllResponse = async () => {
     // if (searchValue === "") return;
@@ -97,12 +102,29 @@ export const useFetch = ({ data }) => {
         // )
         .get("../newsResponse.json")
         .then((res) => {
-          console.log("news response is", res);
           setNewsResponse(res.data);
           setIsSearch(true);
           setIsVoiceSearch(false);
           setTimeout(() => {
             setIsNewsResponseFound(true);
+          }, 5000);
+        });
+    }
+  };
+  const getBooksResponse = () => {
+    if (doSearch && searchValue !== "") {
+      axios
+        // .get(
+        //   `https://books.googleapis.com/books/v1/volumes?q=${searchValue}&key=${booksResponseApiKey}`
+        // )
+        .get("../booksResponse.json")
+        .then((res) => {
+          console.log("books response is", res);
+          setBooksResponse(res.data);
+          setIsSearch(true);
+          setIsVoiceSearch(false);
+          setTimeout(() => {
+            setIsBooksResponseFound(true);
           }, 5000);
         });
     }
@@ -113,6 +135,7 @@ export const useFetch = ({ data }) => {
       getAllResponse();
       getVideoResponse();
       getNewsResponse();
+      getBooksResponse();
       getImageResponse();
     }
   }, [doSearch, searchValue]);

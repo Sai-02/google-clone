@@ -1,0 +1,847 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 1128,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "Qq3UCgAAQBAJ",
+            "etag": "IAXCNcVgLcE",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/Qq3UCgAAQBAJ",
+            "volumeInfo": {
+                "title": "Data Structures And Algorithms",
+                "authors": [
+                    "Shi-kuo Chang"
+                ],
+                "publisher": "World Scientific",
+                "publishedDate": "2003-09-29",
+                "description": "This is an excellent, up-to-date and easy-to-use text on data structures and algorithms that is intended for undergraduates in computer science and information science. The thirteen chapters, written by an international group of experienced teachers, cover the fundamental concepts of algorithms and most of the important data structures as well as the concept of interface design. The book contains many examples and diagrams. Whenever appropriate, program codes are included to facilitate learning.This book is supported by an international group of authors who are experts on data structures and algorithms, through its website at www.cs.pitt.edu/~jung/GrowingBook/, so that both teachers and students can benefit from their expertise.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9789814486156"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "9814486159"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 360,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=Qq3UCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=Qq3UCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=Qq3UCgAAQBAJ&pg=PP1&dq=codechef&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=Qq3UCgAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Qq3UCgAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 6515.71,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 6515.71,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=Qq3UCgAAQBAJ&rdid=book-Qq3UCgAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 6515710000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 6515710000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.co.in/books/download/Data_Structures_And_Algorithms-sample-pdf.acsm?id=Qq3UCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=Qq3UCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This is an excellent, up-to-date and easy-to-use text on data structures and algorithms that is intended for undergraduates in computer science and information science."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "_KbfCQAAQBAJ",
+            "etag": "WocQlOvbNQ0",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/_KbfCQAAQBAJ",
+            "volumeInfo": {
+                "title": "The Practice of Programming",
+                "authors": [
+                    "Brian W. Kernighan",
+                    "Rob Pike"
+                ],
+                "publisher": "Addison-Wesley Professional",
+                "publishedDate": "1999-02-09",
+                "description": "With the same insight and authority that made their book The Unix Programming Environment a classic, Brian Kernighan and Rob Pike have written The Practice of Programming to help make individual programmers more effective and productive. The practice of programming is more than just writing code. Programmers must also assess tradeoffs, choose among design alternatives, debug and test, improve performance, and maintain software written by themselves and others. At the same time, they must be concerned with issues like compatibility, robustness, and reliability, while meeting specifications. The Practice of Programming covers all these topics, and more. This book is full of practical advice and real-world examples in C, C++, Java, and a variety of special-purpose languages. It includes chapters on: debugging: finding bugs quickly and methodically testing: guaranteeing that software works correctly and reliably performance: making programs faster and more compact portability: ensuring that programs run everywhere without change design: balancing goals and constraints to decide which algorithms and data structures are best interfaces: using abstraction and information hiding to control the interactions between components style: writing code that works well and is a pleasure to read notation: choosing languages and tools that let the machine do more of the work Kernighan and Pike have distilled years of experience writing programs, teaching, and working with other programmers to create this book. Anyone who writes software will profit from the principles and guidance in The Practice of Programming .",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780133133417"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0133133419"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 281,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 3,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.2.1.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=_KbfCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=_KbfCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=_KbfCQAAQBAJ&printsec=frontcover&dq=codechef&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=_KbfCQAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=_KbfCQAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 2181.15,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 2181.15,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=_KbfCQAAQBAJ&rdid=book-_KbfCQAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 2181150000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 2181150000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=_KbfCQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The Practice of Programming covers all these topics, and more. This book is full of practical advice and real-world examples in C, C++, Java, and a variety of special-purpose languages."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "al0wGpxm-3UC",
+            "etag": "jeDcJN/SX40",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/al0wGpxm-3UC",
+            "volumeInfo": {
+                "title": "Data Structures and Algorithms",
+                "authors": [
+                    "Aho Alfred V.",
+                    "Aho"
+                ],
+                "publisher": "Pearson Education India",
+                "publishedDate": "1983",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8177588265"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788177588262"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 433,
+                "printType": "BOOK",
+                "categories": [
+                    "Computer algorithms"
+                ],
+                "averageRating": 5,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.4.2.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=al0wGpxm-3UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=al0wGpxm-3UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=al0wGpxm-3UC&printsec=frontcover&dq=codechef&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=al0wGpxm-3UC&dq=codechef&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Data_Structures_and_Algorithms.html?hl=&id=al0wGpxm-3UC"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=al0wGpxm-3UC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "XKN9OIaGH-gC",
+            "etag": "5enDVGhk7pw",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/XKN9OIaGH-gC",
+            "volumeInfo": {
+                "title": "Algorithms and Programming",
+                "subtitle": "Problems and Solutions",
+                "authors": [
+                    "Alexander Shen"
+                ],
+                "publisher": "Springer Science & Business Media",
+                "publishedDate": "2008-01-11",
+                "description": "\"Primarily intended for a first-year undergraduate course in programming\"--Page 4 of cover.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0817647600"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780817647605"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 217,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.4.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=XKN9OIaGH-gC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=XKN9OIaGH-gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=XKN9OIaGH-gC&printsec=frontcover&dq=codechef&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=XKN9OIaGH-gC&dq=codechef&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Algorithms_and_Programming.html?hl=&id=XKN9OIaGH-gC"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.co.in/books/download/Algorithms_and_Programming-sample-pdf.acsm?id=XKN9OIaGH-gC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=XKN9OIaGH-gC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "&quot;Primarily intended for a first-year undergraduate course in programming&quot;--Page 4 of cover."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "UGI9DwAAQBAJ",
+            "etag": "eA5bDAwQcdc",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/UGI9DwAAQBAJ",
+            "volumeInfo": {
+                "title": "Searching & Sorting for Coding Interviews",
+                "subtitle": "With 100+ Interview questions",
+                "authors": [
+                    "Meenakshi, Kamal Rawat"
+                ],
+                "publisher": "Notion Press",
+                "publishedDate": "2017-11-07",
+                "description": "Searching & sorting algorithms form the back bone of coding acumen of developers. This book comprehensively covers In-depth tutorial & analysis of all major algorithms and techniques used to search and sort across data structures. All major variations of each algorithm (e.g. Ternary, Jump, Exponential, Interpolation are variations of Binary search). 110 real coding interview questions as solved examples and unsolved problems. Case studies of implementation of searching and sorting in language libraries. Introduction to how questions are asked and expected to answer on online competitive coding and hiring platforms like hackerrank.com, codechef.com, etc. Introduction to data structures.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781947988231"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1947988239"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 278,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.1.1.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=UGI9DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=UGI9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=UGI9DwAAQBAJ&pg=PP1&dq=codechef&hl=&cd=5&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=UGI9DwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=UGI9DwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 271.4,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 189.98,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=UGI9DwAAQBAJ&rdid=book-UGI9DwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 271400000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 189980000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=UGI9DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Searching &amp; sorting algorithms form the back bone of coding acumen of developers. This book comprehensively covers In-depth tutorial &amp; analysis of all major algorithms and techniques used to search and sort across data structures."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "7XUSn0IKQEgC",
+            "etag": "5xxmexoOUN0",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/7XUSn0IKQEgC",
+            "volumeInfo": {
+                "title": "The Algorithm Design Manual",
+                "authors": [
+                    "Steven S Skiena"
+                ],
+                "publisher": "Springer Science & Business Media",
+                "publishedDate": "2009-04-05",
+                "description": "This newly expanded and updated second edition of the best-selling classic continues to take the \"mystery\" out of designing algorithms, and analyzing their efficacy and efficiency. Expanding on the first edition, the book now serves as the primary textbook of choice for algorithm design courses while maintaining its status as the premier practical reference guide to algorithms for programmers, researchers, and students. The reader-friendly Algorithm Design Manual provides straightforward access to combinatorial algorithms technology, stressing design over analysis. The first part, Techniques, provides accessible instruction on methods for designing and analyzing computer algorithms. The second part, Resources, is intended for browsing and reference, and comprises the catalog of algorithmic resources, implementations and an extensive bibliography. NEW to the second edition: • Doubles the tutorial material and exercises over the first edition • Provides full online support for lecturers, and a completely updated and improved website component with lecture slides, audio and video • Contains a unique catalog identifying the 75 algorithmic problems that arise most often in practice, leading the reader down the right path to solve them • Includes several NEW \"war stories\" relating experiences from real-world applications • Provides up-to-date links leading to the very best algorithm implementations available in C, C++, and Java",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781848000704"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1848000707"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 730,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 4.5,
+                "ratingsCount": 19,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.1.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=7XUSn0IKQEgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=7XUSn0IKQEgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=7XUSn0IKQEgC&printsec=frontcover&dq=codechef&hl=&cd=6&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=7XUSn0IKQEgC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=7XUSn0IKQEgC"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 5463.4,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 3441.94,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=7XUSn0IKQEgC&rdid=book-7XUSn0IKQEgC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 5463400000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 3441940000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.co.in/books/download/The_Algorithm_Design_Manual-sample-pdf.acsm?id=7XUSn0IKQEgC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=7XUSn0IKQEgC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "NEW to the second edition: • Doubles the tutorial material and exercises over the first edition • Provides full online support for lecturers, and a completely updated and improved website component with lecture slides, audio and video ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "pQRLfMngZ7sC",
+            "etag": "cT7MLIMt8tM",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/pQRLfMngZ7sC",
+            "volumeInfo": {
+                "title": "Algorithms In Java, Parts 1-4, 3/E",
+                "authors": [
+                    "Sedgewick"
+                ],
+                "publisher": "Pearson Education India",
+                "publishedDate": "2003-09",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8177587994"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788177587999"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 758,
+                "printType": "BOOK",
+                "averageRating": 5,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.2.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=pQRLfMngZ7sC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=pQRLfMngZ7sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=pQRLfMngZ7sC&printsec=frontcover&dq=codechef&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=pQRLfMngZ7sC&dq=codechef&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Algorithms_In_Java_Parts_1_4_3_E.html?hl=&id=pQRLfMngZ7sC"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=pQRLfMngZ7sC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "LdxABAAAQBAJ",
+            "etag": "jU+Fx4ZrWbo",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/LdxABAAAQBAJ",
+            "volumeInfo": {
+                "title": "Stolen Years",
+                "subtitle": "A Memoir of Simranjit Singh Mann’s Imprisonment",
+                "authors": [
+                    "Pavit Kaur"
+                ],
+                "publisher": "Random House India",
+                "publishedDate": "2014-09-11",
+                "description": "In 1984, Simranjit Singh Mann resigned from the Indian Police Service in protest of Operation Blue Star, the Indian Army operation ordered by Indira Gandhi, then prime minister, that cleared the Golden Temple complex of Sikh militants. Mann was subsequently charged, among other things, with conspiracy to assassinate Prime Minister Indira Gandhi. A passionate Sikh whose radical beliefs were honed by his family, Mann went underground and was apprehended while trying to flee the country. He spent five years in prison, after which all charges were dropped. Three decades after Blue Star, his daughter Pavit Kaur looks back on the years her father spent in prison. In this disarmingly honest and emotionally charged account, Pavit Kaur documents her father’s hellish journey through the Indian prison system. This is also a personal story and the story of a family during one of the most fraught times in India’s history.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788184006476"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8184006470"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 264,
+                "printType": "BOOK",
+                "categories": [
+                    "Literary Collections"
+                ],
+                "averageRating": 5,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.3.3.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=LdxABAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=LdxABAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=LdxABAAAQBAJ&printsec=frontcover&dq=codechef&hl=&cd=8&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=LdxABAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=LdxABAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 400.02,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 355.95,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=LdxABAAAQBAJ&rdid=book-LdxABAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 400020000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 355950000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.co.in/books/download/Stolen_Years-sample-epub.acsm?id=LdxABAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.co.in/books/download/Stolen_Years-sample-pdf.acsm?id=LdxABAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=LdxABAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This is also a personal story and the story of a family during one of the most fraught times in India’s history."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "e2U-PgAACAAJ",
+            "etag": "vWE92JtmKCw",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/e2U-PgAACAAJ",
+            "volumeInfo": {
+                "title": "Practical C++ Programming",
+                "authors": [
+                    "Steve Oualline"
+                ],
+                "publisher": "Turtleback",
+                "publishedDate": "2002-12",
+                "description": "C++ is a powerful, highly flexible, and adaptable programming language that allows software engineers to organize and process information quickly and effectively. But this high-level language is relatively difficult to master, even if you already know the C programming language.The new second edition of \"Practical C++ Programming is a complete introduction to the C++ language for programmers who are learning C++. Reflecting the latest changes to the C++ standard, this new edition takes a useful down-to-earth approach, placing a strong emphasis on how to design clean, elegant code.In short, to-the-point chapters, all aspects of programming are covered including style, software engineering, programming design, object-oriented design, and debugging.It also covers common mistakes and how to find (and avoid) them. End of chapter exercises help you ensure you've mastered the material. Steve Oualline's clear, easy-going writing style and hands-on approach to learning make \"Practical C++ Programming a nearly painless way to master this complex but powerful programming language.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0613911954"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780613911955"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "printType": "BOOK",
+                "averageRating": 3,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=e2U-PgAACAAJ&dq=codechef&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=e2U-PgAACAAJ&dq=codechef&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Practical_C++_Programming.html?hl=&id=e2U-PgAACAAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=e2U-PgAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Reflecting the latest changes to the C++ standard, this new edition takes a useful down-to-earth approach, placing a strong emphasis on how to design clean, elegant code.In short, to-the-point chapters, all aspects of programming are ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "m3GSDwAAQBAJ",
+            "etag": "NUBxpYTscnU",
+            "selfLink": "https://books.googleapis.com/books/v1/volumes/m3GSDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Design and Analysis of Algorithms",
+                "subtitle": "A Contemporary Perspective",
+                "authors": [
+                    "Sandeep Sen",
+                    "Amit Kumar"
+                ],
+                "publisher": "Cambridge University Press",
+                "publishedDate": "2019-04-30",
+                "description": "Focuses on the interplay between algorithm design and the underlying computational models.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781108496827"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1108496822"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 350,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.0.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=m3GSDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=m3GSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=m3GSDwAAQBAJ&printsec=frontcover&dq=codechef&hl=&cd=10&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=m3GSDwAAQBAJ&dq=codechef&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Design_and_Analysis_of_Algorithms.html?hl=&id=m3GSDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=m3GSDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Focuses on the interplay between algorithm design and the underlying computational models."
+            }
+        }
+    ]
+}
