@@ -103,7 +103,53 @@ const BooksResponse = () => {
             })}
           </>
         ) : (
-          ""
+          <>
+            {[...Array(10)].map(() => {
+              return (
+                <article className="books-response-article">
+                  <div className="books-response-img-container">
+                    <Skeleton
+                      variant="rect"
+                      style={{
+                        width: "128px",
+                        height: "169px",
+                      }}
+                    />
+                  </div>
+                  <div className="books-response-info-container">
+                    <div className="book-url">
+                      <p>
+                        <Skeleton />
+                      </p>
+                      <h3
+                        style={{
+                          textDecoration: "none",
+                        }}
+                      >
+                        <Skeleton />
+                      </h3>
+                    </div>
+                    <Skeleton />
+                    <p className="book-description">
+                      <Skeleton
+                        variant="rect"
+                        style={{
+                          height: "3rem",
+                        }}
+                      />
+                    </p>
+                    <div className="book-preview-btn-container">
+                      <Skeleton
+                        style={{
+                          width: "6rem",
+                        }}
+                      />
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </>
         )}
       </div>
       <div className="space-filler"></div>
