@@ -3,6 +3,7 @@ import { Data } from "../../App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import imageNotFound from "../../images/imageNotFound.png";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 import { Skeleton } from "@material-ui/lab";
 const BooksResponse = () => {
   const {
@@ -23,13 +24,21 @@ const BooksResponse = () => {
                 <article className="books-response-article">
                   <div className="books-response-img-container">
                     {"imageLinks" in item.volumeInfo ? (
-                      <img src={item.volumeInfo.imageLinks.thumbnail} />
+                      <img
+                        src={item.volumeInfo.imageLinks.thumbnail}
+                        onClick={() => {
+                          window.open(item.volumeInfo.infoLink);
+                        }}
+                      />
                     ) : (
                       <img
                         src={imageNotFound}
                         style={{
                           width: "128px",
                           height: "169px",
+                        }}
+                        onClick={() => {
+                          window.open(item.volumeInfo.infoLink);
                         }}
                       />
                     )}
@@ -47,11 +56,12 @@ const BooksResponse = () => {
                           alignItems: "center",
                         }}
                       >
-                        books.google.in
+                        {"books.google.in "}
                         <FontAwesomeIcon
                           icon={faChevronRight}
                           style={{
-                            marginLeft: "2px",
+                            marginLeft: "4px",
+                            fontSize: "7px",
                           }}
                         />
                       </p>
@@ -67,6 +77,26 @@ const BooksResponse = () => {
                         {item.volumeInfo.publishedDate.substring(0, 4)}
                       </span>
                     </p>
+                    <p className="book-description">
+                      {item.volumeInfo.description}
+                    </p>
+                    <div className="book-preview-btn-container">
+                      <button
+                        className="book-preview-btn"
+                        onClick={() => {
+                          window.open(item.volumeInfo.previewLink);
+                        }}
+                      >
+                        <MenuBookIcon
+                          style={{
+                            color: "#1A73E8",
+                            marginRight: "4px",
+                            fontSize: "1.1rem",
+                          }}
+                        />
+                        {"Preview"}
+                      </button>
+                    </div>
                   </div>
                 </article>
               );

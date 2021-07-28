@@ -1,3 +1,68 @@
 .books-response-container {
   @include searchPageFormat();
 }
+.books-response {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.books-response-article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.books-response-img-container {
+  padding-top: 0.5rem;
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.books-response-info-container {
+  display: grid;
+  gap: 0.4rem;
+}
+.book-url {
+  p {
+    color: #202124;
+    font-family: arial, sans-serif;
+  }
+  h3 {
+    font-size: 20px;
+    color: #1a0dab;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.book-description {
+  color: #3c4043;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  max-height: 4rem;
+  overflow: hidden;
+}
+.book-preview-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  width: 6rem;
+  border: 1px solid #dfe1e5;
+  border-radius: 20px;
+  // box-shadow: 0 1px 2px rgb(60 64 67 / 15%);
+  &:hover {
+    background: #f4f4f4;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .books-response-container {
+    grid-template-columns: 1fr;
+  }
+}
