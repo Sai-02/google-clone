@@ -157,7 +157,7 @@
 // media query
 //
 // ========================================================
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .search-page-nav {
     grid-template-columns: 1fr;
     padding: 2rem 1rem;
@@ -182,6 +182,9 @@
   }
   .search-page-nav-list {
     overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 @media screen and (max-width: 500px) {
@@ -194,5 +197,18 @@
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+}
+.search-page-nav-list {
+  li {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .search-page-nav-list-icon {
+    display: none;
+  }
+  .search-page-nav-list-text {
+    margin: 0;
   }
 }

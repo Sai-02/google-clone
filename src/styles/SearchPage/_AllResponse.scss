@@ -66,14 +66,22 @@
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
-
+@media screen and (max-width: 850px) {
+  .all-response-container {
+    grid-template-columns: 1fr;
+    padding: 0.7rem 0.7rem;
+    .space-filler {
+      display: none;
+    }
+  }
+}
 @media screen and (max-width: 500px) {
   .all-response-container {
     grid-template-columns: 1fr;
     padding: 0.7rem 0.7rem;
-    padding-top: 0;
+
     .space-filler {
-      display: hidden;
+      display: none;
     }
   }
   .all-response-content {
@@ -83,7 +91,6 @@
     }
   }
   .padding-bottom-0 {
-    // padding-top: 0.3rem;
     padding-bottom: 0.1rem;
   }
 }

@@ -75,6 +75,14 @@
   justify-self: flex-start;
   width: 100%;
 }
+@media screen and (max-width: 850px) {
+  .video-response-container {
+    grid-template-columns: 1fr;
+    .space-filler {
+      display: none;
+    }
+  }
+}
 
 @media screen and (max-width: 700px) {
   .video-response-container {

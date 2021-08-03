@@ -61,13 +61,13 @@
     display: none;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .news-response-container {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 500px) {
   .news-article-title {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
