@@ -8,7 +8,6 @@ import AllResponse from "./AllResponse";
 import BooksResponse from "./BooksResponse";
 import ImagesResponse from "./ImagesResponse";
 import NewsResponse from "./NewsResponse";
-import ShoppingResponse from "./ShoppingResponse";
 import VideoResponse from "./VideoResponse";
 
 const SearchPage = () => {
@@ -43,9 +42,6 @@ const SearchPage = () => {
         break;
       case 4:
         history.push(`/${searchValue}/Books`);
-        break;
-      case 5:
-        history.push(`/${searchValue}/Shopping`);
         break;
       default:
         history.push(`/${searchValue}/all`);
@@ -95,9 +91,6 @@ const SearchPage = () => {
               </Route>
               <Route path={`/${searchValue}/Books`}>
                 <BooksResponse />
-              </Route>
-              <Route path={`/${searchValue}/Shopping`}>
-                <ShoppingResponse />
               </Route>
             </Switch>
           </section>

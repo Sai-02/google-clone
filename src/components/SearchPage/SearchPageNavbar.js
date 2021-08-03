@@ -263,25 +263,6 @@ const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
                   <span className="search-page-nav-list-text">Books</span>
                 </li>
               </Link>
-              <Link
-                to={`/${searchValue}/Shopping`}
-                style={{
-                  height: "100%",
-                }}
-              >
-                <li
-                  className={activeIndex == 5 ? "active" : ""}
-                  onClick={() => {
-                    setActiveIndex(5);
-                    searchPageActiveComponent.current = 5;
-                  }}
-                >
-                  <span className="search-page-nav-list-icon">
-                    <TagOutlined />
-                  </span>
-                  <span className="search-page-nav-list-text">Shopping</span>
-                </li>
-              </Link>
             </ul>
             <div className="space-filler"></div>
             <div className="space-filler"></div>
