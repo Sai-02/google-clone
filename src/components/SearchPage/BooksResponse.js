@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Data } from "../../App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import imageNotFound from "../../images/imageNotFound.png";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import { Skeleton } from "@material-ui/lab";
 const BooksResponse = () => {
@@ -31,8 +30,9 @@ const BooksResponse = () => {
                         }}
                       />
                     ) : (
-                      <img
-                        src={imageNotFound}
+                      <Skeleton
+                        variant="rect"
+                        className="cursor-pointer"
                         style={{
                           width: "128px",
                           height: "169px",
