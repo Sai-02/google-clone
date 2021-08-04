@@ -116,13 +116,18 @@
   display: flex;
   // justify-content: center;
   align-items: center;
+  div {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1rem;
+  }
   li {
     list-style: none;
     // font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    // margin-right: 1rem;
     color: #70757a;
     font-family: Google Sans, arial, sans-serif;
     padding: 0 4px;

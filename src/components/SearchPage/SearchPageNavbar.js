@@ -163,106 +163,108 @@ const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
           <div className="search-page-nav-list-container">
             <div className="space-filler"></div>
             <ul className="search-page-nav-list">
-              <Link
-                to={`/${searchValue}/all`}
-                style={{
-                  height: "100%",
-                }}
-              >
-                <li
-                  className={activeIndex == 0 ? "active" : ""}
-                  onClick={() => {
-                    setActiveIndex(0);
-                    searchPageActiveComponent.current = 0;
+              <div>
+                <Link
+                  to={`/${searchValue}/all`}
+                  style={{
+                    height: "100%",
                   }}
                 >
-                  <span className="search-page-nav-list-icon">
-                    <FontAwesomeIcon icon={faSearch} />
-                  </span>
-                  <span className="search-page-nav-list-text">All</span>
-                </li>
-              </Link>
-              <Link
-                to={`/${searchValue}/Images`}
-                style={{
-                  height: "100%",
-                }}
-              >
-                <li
-                  className={activeIndex == 1 ? "active" : ""}
-                  onClick={() => {
-                    setActiveIndex(1);
-                    searchPageActiveComponent.current = 1;
+                  <li
+                    className={activeIndex == 0 ? "active" : ""}
+                    onClick={() => {
+                      setActiveIndex(0);
+                      searchPageActiveComponent.current = 0;
+                    }}
+                  >
+                    <span className="search-page-nav-list-icon">
+                      <FontAwesomeIcon icon={faSearch} />
+                    </span>
+                    <span className="search-page-nav-list-text">All</span>
+                  </li>
+                </Link>
+                <Link
+                  to={`/${searchValue}/Images`}
+                  style={{
+                    height: "100%",
                   }}
                 >
-                  <span className="search-page-nav-list-icon">
-                    <ImageOutlinedIcon />
-                  </span>
-                  <span className="search-page-nav-list-text">Images</span>
-                </li>
-              </Link>
-              <Link
-                to={`/${searchValue}/Videos`}
-                style={{
-                  height: "100%",
-                }}
-              >
-                <li
-                  className={activeIndex == 2 ? "active" : ""}
-                  onClick={() => {
-                    setActiveIndex(2);
-                    searchPageActiveComponent.current = 2;
+                  <li
+                    className={activeIndex == 1 ? "active" : ""}
+                    onClick={() => {
+                      setActiveIndex(1);
+                      searchPageActiveComponent.current = 1;
+                    }}
+                  >
+                    <span className="search-page-nav-list-icon">
+                      <ImageOutlinedIcon />
+                    </span>
+                    <span className="search-page-nav-list-text">Images</span>
+                  </li>
+                </Link>
+                <Link
+                  to={`/${searchValue}/Videos`}
+                  style={{
+                    height: "100%",
                   }}
                 >
-                  <span className="search-page-nav-list-icon">
-                    <YouTubeIcon />
-                  </span>
-                  <span className="search-page-nav-list-text">Videos</span>
-                </li>
-              </Link>
-              <Link
-                to={`/${searchValue}/News`}
-                style={{
-                  height: "100%",
-                }}
-              >
-                <li
-                  className={activeIndex == 3 ? "active" : ""}
-                  onClick={() => {
-                    setActiveIndex(3);
-                    searchPageActiveComponent.current = 3;
+                  <li
+                    className={activeIndex == 2 ? "active" : ""}
+                    onClick={() => {
+                      setActiveIndex(2);
+                      searchPageActiveComponent.current = 2;
+                    }}
+                  >
+                    <span className="search-page-nav-list-icon">
+                      <YouTubeIcon />
+                    </span>
+                    <span className="search-page-nav-list-text">Videos</span>
+                  </li>
+                </Link>
+                <Link
+                  to={`/${searchValue}/News`}
+                  style={{
+                    height: "100%",
                   }}
                 >
-                  <span className="search-page-nav-list-icon">
-                    <FontAwesomeIcon icon={faNewspaper} />
-                  </span>
-                  <span className="search-page-nav-list-text">News</span>
-                </li>
-              </Link>
-              <Link
-                to={`/${searchValue}/Books`}
-                style={{
-                  height: "100%",
-                }}
-              >
-                <li
-                  className={activeIndex == 4 ? "active" : ""}
-                  onClick={() => {
-                    setActiveIndex(4);
-                    searchPageActiveComponent.current = 4;
+                  <li
+                    className={activeIndex == 3 ? "active" : ""}
+                    onClick={() => {
+                      setActiveIndex(3);
+                      searchPageActiveComponent.current = 3;
+                    }}
+                  >
+                    <span className="search-page-nav-list-icon">
+                      <FontAwesomeIcon icon={faNewspaper} />
+                    </span>
+                    <span className="search-page-nav-list-text">News</span>
+                  </li>
+                </Link>
+                <Link
+                  to={`/${searchValue}/Books`}
+                  style={{
+                    height: "100%",
                   }}
                 >
-                  <span className="search-page-nav-list-icon">
-                    <BookOutlinedIcon
-                      style={{
-                        height: "20px",
-                        width: "20px",
-                      }}
-                    />
-                  </span>
-                  <span className="search-page-nav-list-text">Books</span>
-                </li>
-              </Link>
+                  <li
+                    className={activeIndex == 4 ? "active" : ""}
+                    onClick={() => {
+                      setActiveIndex(4);
+                      searchPageActiveComponent.current = 4;
+                    }}
+                  >
+                    <span className="search-page-nav-list-icon">
+                      <BookOutlinedIcon
+                        style={{
+                          height: "20px",
+                          width: "20px",
+                        }}
+                      />
+                    </span>
+                    <span className="search-page-nav-list-text">Books</span>
+                  </li>
+                </Link>
+              </div>
             </ul>
             <div className="space-filler"></div>
             <div className="space-filler"></div>
