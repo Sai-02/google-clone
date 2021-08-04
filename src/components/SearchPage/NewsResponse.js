@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Data } from "../../App";
 import { FilterDate } from "../Gloabals/FilterDate";
 import { Skeleton } from "@material-ui/lab";
+import ResponseNotFound from "../Gloabals/ResponseNotFound";
 
 const NewsResponse = () => {
   const {
@@ -17,39 +18,47 @@ const NewsResponse = () => {
         <div className="news-response">
           {isNewsResponseFound ? (
             <>
-              <p className="news-response-stats">
-                About {newsResponse.totalArticles.toLocaleString()} results
-              </p>
-              <div className="news-response-article-container">
-                {newsResponse.articles.map((item) => {
-                  return (
-                    <article className="news-response-article">
-                      <div className="news-response-article-info-container">
-                        <a
-                          href={item.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="news-article-link"
-                        >
-                          <p className="news-article-source-name">
-                            {item.source.name}
-                          </p>
-                          <h3 className="news-article-title">{item.title}</h3>
-                        </a>
-                        <p className="news-article-description">
-                          {item.description}
-                        </p>
-                        <p className="news-article-date">
-                          {FilterDate(item.publishedAt)}
-                        </p>
-                      </div>
-                      <div className="news-response-article-img-container">
-                        <img src={item.image} alt="" />
-                      </div>
-                    </article>
-                  );
-                })}
-              </div>
+              {newsResponse.articles.length == 0 ? (
+                <ResponseNotFound />
+              ) : (
+                <>
+                  <p className="news-response-stats">
+                    About {newsResponse.totalArticles.toLocaleString()} results
+                  </p>
+                  <div className="news-response-article-container">
+                    {newsResponse.articles.map((item) => {
+                      return (
+                        <article className="news-response-article">
+                          <div className="news-response-article-info-container">
+                            <a
+                              href={item.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="news-article-link"
+                            >
+                              <p className="news-article-source-name">
+                                {item.source.name}
+                              </p>
+                              <h3 className="news-article-title">
+                                {item.title}
+                              </h3>
+                            </a>
+                            <p className="news-article-description">
+                              {item.description}
+                            </p>
+                            <p className="news-article-date">
+                              {FilterDate(item.publishedAt)}
+                            </p>
+                          </div>
+                          <div className="news-response-article-img-container">
+                            <img src={item.image} alt="" />
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
             </>
           ) : (
             <>

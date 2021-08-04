@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import ResponseNotFound from "../Gloabals/ResponseNotFound";
 
 const AllResponse = () => {
   const { allResponse, isAllResponseFound } = useContext(Data);
   const { searchInformation, items } = allResponse;
-
   return (
     <>
       <section className="all-response-container">
@@ -23,29 +23,35 @@ const AllResponse = () => {
             <div className="all-response-content-container">
               {isAllResponseFound ? (
                 <>
-                  {items.map((item) => {
-                    return (
-                      <>
-                        <div className="all-response-content">
-                          <a
-                            href={item.link}
-                            className="linkToPage"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <p className="url">
-                              {item.link}{" "}
-                              <span className="all-reponse-icon">
-                                <FontAwesomeIcon icon={faCaretDown} />
-                              </span>
-                            </p>{" "}
-                            <h1 className="title">{item.title}</h1>
-                          </a>
-                          <p className="snippet">{item.snippet}</p>
-                        </div>
-                      </>
-                    );
-                  })}
+                  {items === undefined ? (
+                    <ResponseNotFound />
+                  ) : (
+                    <>
+                      {items.map((item) => {
+                        return (
+                          <>
+                            <div className="all-response-content">
+                              <a
+                                href={item.link}
+                                className="linkToPage"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <p className="url">
+                                  {item.link}{" "}
+                                  <span className="all-reponse-icon">
+                                    <FontAwesomeIcon icon={faCaretDown} />
+                                  </span>
+                                </p>{" "}
+                                <h1 className="title">{item.title}</h1>
+                              </a>
+                              <p className="snippet">{item.snippet}</p>
+                            </div>
+                          </>
+                        );
+                      })}
+                    </>
+                  )}
                 </>
               ) : (
                 [...Array(10)].map(() => {

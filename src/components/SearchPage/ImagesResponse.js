@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
 import { Modal, Button } from "antd";
+import ResponseNotFound from "../Gloabals/ResponseNotFound";
 const ImagesResponse = () => {
   const {
     imageResponse,
@@ -57,31 +58,42 @@ const ImagesResponse = () => {
               <img src={modalImageSrc} alt={modalTitle} />
             </div>
           </Modal>
-          <section className="image-response">
-            {items.map((item) => {
-              return (
-                <>
-                  <article className="image-response-content">
-                    <div
-                      className="image-response-img-container"
-                      onClick={() => {
-                        setModalLink(item.image.contextLink);
-                        setModalImageSrc(item.link);
-                        setModalTitle(item.title);
-                        setOpenModal(true);
-                      }}
-                    >
-                      <img src={item.link} alt="" />
-                    </div>
-                    <div className="image-response-text-container">
-                      <p>{item.title}</p>
-                      <p>{item.displayLink}</p>
-                    </div>
-                  </article>
-                </>
-              );
-            })}
-          </section>
+
+          {items === undefined ? (
+            <section className="all-response-container">
+              <div className="space-filler"></div>
+              <ResponseNotFound />
+              <div className="space-filler"></div>
+              <div className="space-filler"></div>
+              <div className="space-filler"></div>
+            </section>
+          ) : (
+            <section className="image-response">
+              {items.map((item) => {
+                return (
+                  <>
+                    <article className="image-response-content">
+                      <div
+                        className="image-response-img-container"
+                        onClick={() => {
+                          setModalLink(item.image.contextLink);
+                          setModalImageSrc(item.link);
+                          setModalTitle(item.title);
+                          setOpenModal(true);
+                        }}
+                      >
+                        <img src={item.link} alt="" />
+                      </div>
+                      <div className="image-response-text-container">
+                        <p>{item.title}</p>
+                        <p>{item.displayLink}</p>
+                      </div>
+                    </article>
+                  </>
+                );
+              })}
+            </section>
+          )}
         </>
       ) : (
         <section className="image-response">

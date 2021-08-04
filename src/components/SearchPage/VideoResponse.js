@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
 import { PlayCircleFilledRounded } from "@material-ui/icons";
 import { FilterDate } from "../Gloabals/FilterDate";
+import ResponseNotFound from "../Gloabals/ResponseNotFound";
 
 const VideoResponse = () => {
   const {
@@ -11,7 +12,6 @@ const VideoResponse = () => {
     isVideoResponseFound,
     setIsVideoResponseFound,
   } = useContext(Data);
-
   return (
     <section className="video-response-container">
       <div className="space-filler"></div>
@@ -22,65 +22,69 @@ const VideoResponse = () => {
               About {videoResponse.pageInfo.totalResults.toLocaleString()}{" "}
               results (0.32 seconds)
             </p>
-            <div className="video-response-content-container">
-              {videoResponse.items.map((item) => {
-                return (
-                  <article className="video-response-content">
-                    <a
-                      href={`https://www.youtube.com/video/${item.id.videoId}`}
-                      className="video-response-link"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <p className="video-response-url">{`www.youtube.com > ${item.snippet.channelTitle}`}</p>
-                      <h1 className="video-response-title">
-                        {item.snippet.title}
-                      </h1>
-                    </a>
-                    <div className="video-response-info">
-                      <div
-                        style={{
-                          height: "65px",
-                          width: "116px",
-                        }}
+            {videoResponse.items.length == 0 ? (
+              <ResponseNotFound />
+            ) : (
+              <div className="video-response-content-container">
+                {videoResponse.items.map((item) => {
+                  return (
+                    <article className="video-response-content">
+                      <a
+                        href={`https://www.youtube.com/video/${item.id.videoId}`}
+                        className="video-response-link"
+                        target="_blank"
+                        rel="noreferrer"
                       >
+                        <p className="video-response-url">{`www.youtube.com > ${item.snippet.channelTitle}`}</p>
+                        <h1 className="video-response-title">
+                          {item.snippet.title}
+                        </h1>
+                      </a>
+                      <div className="video-response-info">
                         <div
-                          className="video-response-info-img-container"
-                          onClick={() => {
-                            window.open(
-                              `https://www.youtube.com/video/${item.id.videoId}`
-                            );
+                          style={{
+                            height: "65px",
+                            width: "116px",
                           }}
                         >
-                          <img
-                            src={item.snippet.thumbnails.medium.url}
-                            alt="an image"
-                          />
-                          <div className="video-response-img-icon-container">
-                            <PlayCircleFilledRounded
-                              style={{
-                                color: "white",
-                              }}
+                          <div
+                            className="video-response-info-img-container"
+                            onClick={() => {
+                              window.open(
+                                `https://www.youtube.com/video/${item.id.videoId}`
+                              );
+                            }}
+                          >
+                            <img
+                              src={item.snippet.thumbnails.medium.url}
+                              alt="an image"
                             />
+                            <div className="video-response-img-icon-container">
+                              <PlayCircleFilledRounded
+                                style={{
+                                  color: "white",
+                                }}
+                              />
+                            </div>
                           </div>
                         </div>
+                        <div className="video-response-info-para-container">
+                          <p className="video-response-para">
+                            {item.snippet.description}
+                          </p>
+                          <p className="video-response-date">
+                            {FilterDate(
+                              item.snippet.publishTime.substring(0, 10)
+                            )}{" "}
+                            uploaded by {item.snippet.channelTitle}
+                          </p>
+                        </div>
                       </div>
-                      <div className="video-response-info-para-container">
-                        <p className="video-response-para">
-                          {item.snippet.description}
-                        </p>
-                        <p className="video-response-date">
-                          {FilterDate(
-                            item.snippet.publishTime.substring(0, 10)
-                          )}{" "}
-                          uploaded by {item.snippet.channelTitle}
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
+                    </article>
+                  );
+                })}
+              </div>
+            )}
           </>
         ) : (
           <>
