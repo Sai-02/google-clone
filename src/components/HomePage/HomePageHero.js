@@ -8,7 +8,7 @@ import { Data } from "../../App";
 import Alert from "@material-ui/lab/Alert";
 import useFetch from "../useFetch";
 import { isValidText } from "../Globals/isValidText";
-const HomePageHero = () => {
+const HomePageHero = ({ searchValueLengthExceedAlert }) => {
   const [input, setInput] = useState("");
   const [isAlert, setIsAlert] = useState(false);
   const {
@@ -31,6 +31,10 @@ const HomePageHero = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input === "") {
+      return;
+    }
+    if (input.length > 200) {
+      searchValueLengthExceedAlert();
       return;
     }
     if (!isValidText(input)) {
