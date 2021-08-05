@@ -7,6 +7,7 @@ import { Tooltip } from "@material-ui/core";
 import { Data } from "../../App";
 import Alert from "@material-ui/lab/Alert";
 import useFetch from "../useFetch";
+import { isValidText } from "../Gloabals/isValidText";
 const HomePageHero = () => {
   const [input, setInput] = useState("");
   const [isAlert, setIsAlert] = useState(false);
@@ -38,10 +39,6 @@ const HomePageHero = () => {
     }
 
     setSearchValue(input);
-  };
-  const isValidText = (text) => {
-    const format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
-    return !format.test(text);
   };
   return (
     <>
