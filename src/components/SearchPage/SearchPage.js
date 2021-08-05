@@ -9,6 +9,7 @@ import BooksResponse from "./BooksResponse";
 import ImagesResponse from "./ImagesResponse";
 import NewsResponse from "./NewsResponse";
 import VideoResponse from "./VideoResponse";
+import { Modal } from "antd";
 
 const SearchPage = () => {
   const history = useHistory();
@@ -61,7 +62,16 @@ const SearchPage = () => {
     };
   }, []);
   const searchPageActiveComponent = useRef(0);
-
+  const specialCharacterAlert = () => {
+    Modal.error({
+      title: "Remove special characters from input",
+    });
+  };
+  const searchValueLengthExceedAlert = () => {
+    Modal.info({
+      title: "Maximum length of keyword allowed is 200",
+    });
+  };
   return (
     <>
       {isVoiceSearch ? (
@@ -73,6 +83,8 @@ const SearchPage = () => {
             <SearchPageNavbar
               navbarFixed={navbarFixed}
               searchPageActiveComponent={searchPageActiveComponent}
+              specialCharacterAlert={specialCharacterAlert}
+              searchValueLengthExceedAlert={searchValueLengthExceedAlert}
             />
             {/* End of Search Pagge Navbar */}
 

@@ -20,7 +20,12 @@ import { Link } from "react-router-dom";
 import useFetch from "../useFetch";
 import { isValidText } from "../Globals/isValidText";
 
-const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
+const SearchPageNavbar = ({
+  navbarFixed,
+  searchPageActiveComponent,
+  specialCharacterAlert,
+  searchValueLengthExceedAlert,
+}) => {
   const {
     isSearch,
     setIsSearch,
@@ -45,6 +50,14 @@ const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input === searchValue) {
+      return;
+    }
+    if (input.length > 200) {
+      searchValueLengthExceedAlert();
+      return;
+    }
+    if (!isValidText(input)) {
+      specialCharacterAlert();
       return;
     }
 
