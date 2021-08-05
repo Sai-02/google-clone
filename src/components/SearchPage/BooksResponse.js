@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import { Skeleton } from "@material-ui/lab";
-import ResponseNotFound from "../Gloabals/ResponseNotFound";
+import ResponseNotFound from "../Globals/ResponseNotFound";
 const BooksResponse = () => {
   const {
     booksResponse,

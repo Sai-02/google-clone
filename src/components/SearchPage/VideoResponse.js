@@ -2,8 +2,8 @@ import React, { useContext, useEffect } from "react";
 import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
 import { PlayCircleFilledRounded } from "@material-ui/icons";
-import { FilterDate } from "../Gloabals/FilterDate";
-import ResponseNotFound from "../Gloabals/ResponseNotFound";
+import { FilterDate } from "../Globals/FilterDate";
+import ResponseNotFound from "../Globals/ResponseNotFound";
 
 const VideoResponse = () => {
   const {

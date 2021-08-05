@@ -6,7 +6,7 @@ import AppsIcon from "@material-ui/icons/Apps";
 import Dropdown from "react-bootstrap/Dropdown";
 import { AccountCircle } from "@material-ui/icons";
 import { Tooltip } from "@material-ui/core";
-import NavbarDropDown from "../Gloabals/NavbarDropDown";
+import NavbarDropDown from "../Globals/NavbarDropDown";
 const Navbar = () => {
   return (
     <nav className="nav">

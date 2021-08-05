@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
 import { Modal, Button } from "antd";
-import ResponseNotFound from "../Gloabals/ResponseNotFound";
+import ResponseNotFound from "../Globals/ResponseNotFound";
 const ImagesResponse = () => {
   const {
     imageResponse,

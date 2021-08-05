@@ -14,10 +14,11 @@ import { TagOutlined } from "@ant-design/icons";
 import { Tooltip } from "@material-ui/core";
 import Mic from "../../images/Google_mic.svg.png";
 import { Divider } from "@material-ui/core";
-import NavbarDropDown from "../Gloabals/NavbarDropDown";
+import NavbarDropDown from "../Globals/NavbarDropDown";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useFetch from "../useFetch";
+import { isValidText } from "../Globals/isValidText";
 
 const SearchPageNavbar = ({ navbarFixed, searchPageActiveComponent }) => {
   const {

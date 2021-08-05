@@ -3,7 +3,7 @@ import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import ResponseNotFound from "../Gloabals/ResponseNotFound";
+import ResponseNotFound from "../Globals/ResponseNotFound";
 
 const AllResponse = () => {
   const { allResponse, isAllResponseFound } = useContext(Data);

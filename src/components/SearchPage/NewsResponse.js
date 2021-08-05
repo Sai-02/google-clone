@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Data } from "../../App";
-import { FilterDate } from "../Gloabals/FilterDate";
+import { FilterDate } from "../Globals/FilterDate";
 import { Skeleton } from "@material-ui/lab";
-import ResponseNotFound from "../Gloabals/ResponseNotFound";
+import ResponseNotFound from "../Globals/ResponseNotFound";
 
 const NewsResponse = () => {
   const {
