@@ -17,7 +17,7 @@ const AllResponse = () => {
             {isAllResponseFound ? (
               <p className="results-info">{`About ${searchInformation.formattedTotalResults} results in (${searchInformation.formattedSearchTime} seconds)`}</p>
             ) : (
-              <Skeleton variant="text" animated />
+              <Skeleton variant="text" />
             )}
 
             <div className="all-response-content-container">
@@ -58,9 +58,9 @@ const AllResponse = () => {
                   return (
                     <>
                       <div className="all-response-content">
-                        <Skeleton variant="text" animated className="url" />
-                        <Skeleton variant="text" animated className="title" />
-                        <Skeleton variant="rect" animated className="snippet" />
+                        <Skeleton variant="text" className="url" />
+                        <Skeleton variant="text" className="title" />
+                        <Skeleton variant="rect" className="snippet" />
                       </div>
                     </>
                   );
