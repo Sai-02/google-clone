@@ -29,75 +29,65 @@ export const useFetch = () => {
   const getAllResponse = async () => {
     if (doSearch && searchValue !== "") {
       axios
-        // .get(
-        //   `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchId}&q=${searchValue}`
-        // )
-        .get("../allResponse.json")
+        .get(
+          `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchId}&q=${searchValue}`
+        )
+        // .get("../allResponse.json")
         .then((res) => {
           setAllResponse(res.data);
-          setTimeout(() => {
-            setIsAllResponseFound(true);
-          }, 2000);
+          setIsAllResponseFound(true);
         });
     }
   };
   const getImageResponse = () => {
     if (doSearch && searchValue !== "") {
       axios
-        // .get(
-        //   `https://www.googleapis.com/customsearch/v1?key=${imageResponseApiKey}&cx=${imageResponseSearchId}&q=${searchValue}&searchType=image`
-        // )
-        .get("../imageResponse.json")
+        .get(
+          `https://www.googleapis.com/customsearch/v1?key=${imageResponseApiKey}&cx=${imageResponseSearchId}&q=${searchValue}&searchType=image`
+        )
+        // .get("../imageResponse.json")
         .then((res) => {
           setImageResponse(res.data);
-          setTimeout(() => {
-            setIsImageResponseFound(true);
-          }, 5000);
+          setIsImageResponseFound(true);
         });
     }
   };
   const getVideoResponse = () => {
     if (doSearch && searchValue !== "") {
       axios
-        // .get(
-        //   `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchValue}&type=video&key=${videoResponseApiKey}`
-        // )
-        .get("../videoResponse.json")
+        .get(
+          `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchValue}&type=video&key=${videoResponseApiKey}`
+        )
+        // .get("../videoResponse.json")
         .then((res) => {
           setVideoResponse(res.data);
-          setTimeout(() => {
-            setIsVideoResponseFound(true);
-          }, 5000);
+          setIsVideoResponseFound(true);
         });
     }
   };
   const getNewsResponse = () => {
     if (doSearch && searchValue !== "") {
       axios
-        // .get(
-        //   `https://gnews.io/api/v4/search?q=${searchValue}&lang=en&token=${newResponseApiKey}`
-        // )
-        .get("../newsResponse.json")
+        .get(
+          `https://gnews.io/api/v4/search?q=${searchValue}&lang=en&token=${newResponseApiKey}`
+        )
+        // .get("../newsResponse.json")
         .then((res) => {
           setNewsResponse(res.data);
-          setTimeout(() => {
-            setIsNewsResponseFound(true);
-          }, 5000);
+          setIsNewsResponseFound(true);
         });
     }
   };
   const getBooksResponse = () => {
     if (doSearch && searchValue !== "") {
       axios
-        // .get(
-        //   `https://books.googleapis.com/books/v1/volumes?q=${searchValue}&key=${booksResponseApiKey}`
-        // )
-        .get("../booksResponse.json")
+        .get(
+          `https://books.googleapis.com/books/v1/volumes?q=${searchValue}&key=${booksResponseApiKey}`
+        )
+        // .get("../booksResponse.json")
         .then((res) => {
           setBooksResponse(res.data);
-          setTimeout(() => {
-            setIsBooksResponseFound(true);
-          }, 5000);
+          setIsBooksResponseFound(true);
         });
     }
   };
