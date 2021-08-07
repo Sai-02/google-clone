@@ -6,12 +6,7 @@ import MenuBookIcon from "@material-ui/icons/MenuBook";
 import { Skeleton } from "@material-ui/lab";
 import ResponseNotFound from "../Globals/ResponseNotFound";
 const BooksResponse = () => {
-  const {
-    booksResponse,
-    setBooksResponse,
-    isBooksResponseFound,
-    setIsBooksResponseFound,
-  } = useContext(Data);
+  const { booksResponse, isBooksResponseFound } = useContext(Data);
 
   return (
     <section className="books-response-container">
@@ -23,9 +18,9 @@ const BooksResponse = () => {
               <ResponseNotFound />
             ) : (
               <>
-                {booksResponse.items.map((item) => {
+                {booksResponse.items.map((item, index) => {
                   return (
-                    <article className="books-response-article">
+                    <article className="books-response-article" key={index}>
                       <div className="books-response-img-container">
                         {"imageLinks" in item.volumeInfo ? (
                           <img
@@ -119,9 +114,9 @@ const BooksResponse = () => {
           </>
         ) : (
           <>
-            {[...Array(10)].map(() => {
+            {[...Array(10)].map((item, index) => {
               return (
-                <article className="books-response-article">
+                <article className="books-response-article" key={index}>
                   <div className="books-response-img-container">
                     <Skeleton
                       variant="rect"

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Data } from "../../App";
 import { Skeleton } from "@material-ui/lab";
 import { PlayCircleFilledRounded } from "@material-ui/icons";
@@ -6,12 +6,7 @@ import { FilterDate } from "../Globals/FilterDate";
 import ResponseNotFound from "../Globals/ResponseNotFound";
 
 const VideoResponse = () => {
-  const {
-    videoResponse,
-    setVideoResponse,
-    isVideoResponseFound,
-    setIsVideoResponseFound,
-  } = useContext(Data);
+  const { videoResponse, isVideoResponseFound } = useContext(Data);
   return (
     <section className="video-response-container">
       <div className="space-filler"></div>
@@ -26,9 +21,9 @@ const VideoResponse = () => {
               <ResponseNotFound />
             ) : (
               <div className="video-response-content-container">
-                {videoResponse.items.map((item) => {
+                {videoResponse.items.map((item, index) => {
                   return (
-                    <article className="video-response-content">
+                    <article className="video-response-content" key={index}>
                       <a
                         href={`https://www.youtube.com/video/${item.id.videoId}`}
                         className="video-response-link"
@@ -92,9 +87,9 @@ const VideoResponse = () => {
               <Skeleton variant="text" />
             </p>
             <div className="video-response-content-container">
-              {[...Array(25)].map(() => {
+              {[...Array(25)].map((item, index) => {
                 return (
-                  <article className="video-response-content">
+                  <article className="video-response-content" key={index}>
                     <div className="video-response-link">
                       <p
                         className="video-response-url"

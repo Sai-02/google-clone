@@ -5,12 +5,7 @@ import { Skeleton } from "@material-ui/lab";
 import ResponseNotFound from "../Globals/ResponseNotFound";
 
 const NewsResponse = () => {
-  const {
-    newsResponse,
-    setNewsResponse,
-    isNewsResponseFound,
-    setIsNewsResponseFound,
-  } = useContext(Data);
+  const { newsResponse, isNewsResponseFound } = useContext(Data);
   return (
     <>
       <section className="news-response-container">
@@ -26,9 +21,9 @@ const NewsResponse = () => {
                     About {newsResponse.totalArticles.toLocaleString()} results
                   </p>
                   <div className="news-response-article-container">
-                    {newsResponse.articles.map((item) => {
+                    {newsResponse.articles.map((item, index) => {
                       return (
-                        <article className="news-response-article">
+                        <article className="news-response-article" key={index}>
                           <div className="news-response-article-info-container">
                             <a
                               href={item.url}
@@ -70,9 +65,9 @@ const NewsResponse = () => {
                 />
               </p>
               <div className="news-response-article-container">
-                {[...Array(8)].map(() => {
+                {[...Array(8)].map((item, index) => {
                   return (
-                    <article className="news-response-article">
+                    <article className="news-response-article" key={index}>
                       <div
                         className="news-response-article-info-container"
                         style={{
