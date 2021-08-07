@@ -56,7 +56,13 @@ const AllResponse = () => {
                   return (
                     <div className="all-response-content" key={index}>
                       <Skeleton variant="text" className="url" />
-                      <Skeleton variant="text" className="title" />
+                      <Skeleton
+                        variant="text"
+                        className="title"
+                        style={{
+                          textDecoration: "none",
+                        }}
+                      />
                       <Skeleton variant="rect" className="snippet" />
                     </div>
                   );

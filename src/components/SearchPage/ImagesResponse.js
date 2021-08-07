@@ -101,7 +101,13 @@ const ImagesResponse = () => {
                     key={index}
                   />
                 </div>
-                <div className="image-response-text-container">
+                <div
+                  className="image-response-text-container"
+                  style={{
+                    textDecoration: "none",
+                    cursor: "auto",
+                  }}
+                >
                   <Skeleton
                     style={{
                       width: "100%",
