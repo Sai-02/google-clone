@@ -27,42 +27,38 @@ const AllResponse = () => {
                     <ResponseNotFound />
                   ) : (
                     <>
-                      {items.map((item) => {
+                      {items.map((item, index) => {
                         return (
-                          <>
-                            <div className="all-response-content">
-                              <a
-                                href={item.link}
-                                className="linkToPage"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                <p className="url">
-                                  {item.link}{" "}
-                                  <span className="all-reponse-icon">
-                                    <FontAwesomeIcon icon={faCaretDown} />
-                                  </span>
-                                </p>{" "}
-                                <h1 className="title">{item.title}</h1>
-                              </a>
-                              <p className="snippet">{item.snippet}</p>
-                            </div>
-                          </>
+                          <div className="all-response-content" key={index}>
+                            <a
+                              href={item.link}
+                              className="linkToPage"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <p className="url">
+                                {item.link}{" "}
+                                <span className="all-reponse-icon">
+                                  <FontAwesomeIcon icon={faCaretDown} />
+                                </span>
+                              </p>{" "}
+                              <h1 className="title">{item.title}</h1>
+                            </a>
+                            <p className="snippet">{item.snippet}</p>
+                          </div>
                         );
                       })}
                     </>
                   )}
                 </>
               ) : (
-                [...Array(10)].map(() => {
+                [...Array(10)].map((item, index) => {
                   return (
-                    <>
-                      <div className="all-response-content">
-                        <Skeleton variant="text" className="url" />
-                        <Skeleton variant="text" className="title" />
-                        <Skeleton variant="rect" className="snippet" />
-                      </div>
-                    </>
+                    <div className="all-response-content" key={index}>
+                      <Skeleton variant="text" className="url" />
+                      <Skeleton variant="text" className="title" />
+                      <Skeleton variant="rect" className="snippet" />
+                    </div>
                   );
                 })
               )}
