@@ -1,10 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import AppsIcon from "@material-ui/icons/Apps";
 import Dropdown from "react-bootstrap/Dropdown";
-import { AccountCircle } from "@material-ui/icons";
 import { Tooltip } from "@material-ui/core";
 import NavbarDropDown from "../Globals/NavbarDropDown";
 const Navbar = () => {
