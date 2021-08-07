@@ -76,9 +76,15 @@ const BooksResponse = () => {
                         </a>
                         <p className="book-author-time-container">
                           <span className="book-author">
-                            {item.volumeInfo.authors.map((singleAuthor) => {
-                              return `${singleAuthor} `;
-                            })}
+                            {item.volumeInfo.authors === undefined ? (
+                              <></>
+                            ) : (
+                              <>
+                                {item.volumeInfo.authors.map((singleAuthor) => {
+                                  return `${singleAuthor} `;
+                                })}
+                              </>
+                            )}
                           </span>
                           <span className="book-time">
                             {item.volumeInfo.publishedDate.substring(0, 4)}
