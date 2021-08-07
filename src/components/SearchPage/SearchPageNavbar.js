@@ -10,14 +10,12 @@ import {
 import BookOutlinedIcon from "@material-ui/icons/BookOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import { TagOutlined } from "@ant-design/icons";
 import { Tooltip } from "@material-ui/core";
 import Mic from "../../images/Google_mic.svg.png";
 import { Divider } from "@material-ui/core";
 import NavbarDropDown from "../Globals/NavbarDropDown";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import useFetch from "../useFetch";
 import { isValidText } from "../Globals/isValidText";
 
 const SearchPageNavbar = ({
@@ -27,23 +25,14 @@ const SearchPageNavbar = ({
   searchValueLengthExceedAlert,
 }) => {
   const {
-    isSearch,
     setIsSearch,
     searchValue,
     setSearchValue,
-    isVoiceSearch,
     setIsVoiceSearch,
-    doSearch,
-    setDoSearch,
-    isAllResponseFound,
     setIsAllResponseFound,
-    isImageResponseFound,
     setIsImageResponseFound,
-    isVideoResponseFound,
     setIsVideoResponseFound,
-    isNewsResponseFound,
     setIsNewsResponseFound,
-    isBooksResponseFound,
     setIsBooksResponseFound,
   } = useContext(Data);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -64,8 +53,6 @@ const SearchPageNavbar = ({
     setSearchValue(input);
     console.log("I am submitted");
   };
-
-  useFetch(searchValue);
   const [input, setInput] = useState(searchValue);
   useEffect(() => {
     setIsAllResponseFound(false);
@@ -74,7 +61,6 @@ const SearchPageNavbar = ({
     setIsNewsResponseFound(false);
     setIsBooksResponseFound(false);
     setActiveIndex(searchPageActiveComponent.current);
-    setDoSearch(true);
   }, [searchValue]);
   return (
     <>

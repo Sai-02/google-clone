@@ -5,19 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import MicIcon from "@material-ui/icons/Mic";
 import VoiceSearchError from "./VoiceSearchError";
-import useFetch from "../useFetch";
 
 const VoiceSearch = () => {
-  const {
-    isVoiceSearch,
-    setIsVoiceSearch,
-    isSearch,
-    setIsSearch,
-    searchValue,
-    setSearchValue,
-    doSearch,
-    setDoSearch,
-  } = useContext(Data);
+  const { isVoiceSearch, setIsVoiceSearch, setSearchValue, setDoSearch } =
+    useContext(Data);
   const [voiceSearchIconContainerClass, setVoiceSearchIconContainerClass] =
     useState("voice-search-icon-container background-white");
   const [voiceSearchIconClass, setVoiceSearchIconClass] = useState(
@@ -26,7 +17,6 @@ const VoiceSearch = () => {
   const [message, setMessage] = useState("Preparing..");
   const [isVoiceSearchError, setIsVoiceSearchError] = useState(false);
   const [audio, setAudio] = useState("");
-  useFetch(searchValue);
   useEffect(() => {
     if (audio === "") {
     } else if (message !== audio) {
@@ -34,10 +24,8 @@ const VoiceSearch = () => {
       setVoiceSearchIconClass("voice-search-icon");
       setMessage(audio);
       setTimeout(() => {
-        setDoSearch(true);
-        // setSearchValue(message);
         setSearchValue(audio);
-        // setIsSearch(true);
+        setDoSearch(true);
       }, 2000);
     }
   }, [message]);
@@ -47,6 +35,11 @@ const VoiceSearch = () => {
       setMessage(audio);
     }
   }, [audio]);
+  useEffect(() => {
+    if (!isVoiceSearch) {
+      recognition.stop();
+    }
+  }, [isVoiceSearch]);
   if (!isVoiceSearchError) {
     try {
       var speech = new SpeechSynthesisUtterance();
@@ -61,6 +54,7 @@ const VoiceSearch = () => {
         setVoiceSearchIconContainerClass(
           "voice-search-icon-container background-red animation"
         );
+        console.log("started listening");
         setMessage("Listening...");
         // setTimeout(() => {
         //   recognition.abort();
@@ -125,10 +119,7 @@ const VoiceSearch = () => {
         <VoiceSearchError />
       ) : (
         <article className="voice-search-hero">
-          <p>
-            {message}
-            {/* <span className="try-again-message"> Try again?</span> */}
-          </p>
+          <p>{message}</p>
           <div>
             <div
               className={voiceSearchIconContainerClass}

@@ -1,8 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Data } from "../App";
 import axios from "axios";
-
-export const useFetch = ({ data }) => {
+export const useFetch = () => {
   const apiKey = process.env.REACT_APP_API_KEY;
   const searchId = process.env.REACT_APP_Search_Key;
   const imageResponseApiKey = process.env.REACT_APP_IMAGE_API_KEY;
@@ -12,36 +11,22 @@ export const useFetch = ({ data }) => {
   const booksResponseApiKey = process.env.REACT_APP_BOOKS_API_KEY;
   const {
     searchValue,
-    setSearchValue,
-    allResponse,
     setAllResponse,
     doSearch,
     setDoSearch,
-    isSearch,
     setIsSearch,
-    isVoiceSearch,
     setIsVoiceSearch,
-    isAllResponseFound,
     setIsAllResponseFound,
-    imageResponse,
     setImageResponse,
-    isImageResponseFound,
     setIsImageResponseFound,
-    videoResponse,
     setVideoResponse,
-    isVideoResponseFound,
     setIsVideoResponseFound,
-    newsResponse,
     setNewsResponse,
-    isNewsResponseFound,
     setIsNewsResponseFound,
-    booksResponse,
     setBooksResponse,
-    isBooksResponseFound,
     setIsBooksResponseFound,
   } = useContext(Data);
   const getAllResponse = async () => {
-    // if (searchValue === "") return;
     if (doSearch && searchValue !== "") {
       axios
         // .get(
@@ -50,9 +35,6 @@ export const useFetch = ({ data }) => {
         .get("../allResponse.json")
         .then((res) => {
           setAllResponse(res.data);
-          setIsSearch(true);
-          setIsVoiceSearch(false);
-
           setTimeout(() => {
             setIsAllResponseFound(true);
           }, 2000);
@@ -67,10 +49,7 @@ export const useFetch = ({ data }) => {
         // )
         .get("../imageResponse.json")
         .then((res) => {
-          setDoSearch(false);
           setImageResponse(res.data);
-          setIsSearch(true);
-          setIsVoiceSearch(false);
           setTimeout(() => {
             setIsImageResponseFound(true);
           }, 5000);
@@ -86,8 +65,6 @@ export const useFetch = ({ data }) => {
         .get("../videoResponse.json")
         .then((res) => {
           setVideoResponse(res.data);
-          setIsSearch(true);
-          setIsVoiceSearch(false);
           setTimeout(() => {
             setIsVideoResponseFound(true);
           }, 5000);
@@ -103,8 +80,6 @@ export const useFetch = ({ data }) => {
         .get("../newsResponse.json")
         .then((res) => {
           setNewsResponse(res.data);
-          setIsSearch(true);
-          setIsVoiceSearch(false);
           setTimeout(() => {
             setIsNewsResponseFound(true);
           }, 5000);
@@ -119,26 +94,29 @@ export const useFetch = ({ data }) => {
         // )
         .get("../booksResponse.json")
         .then((res) => {
-          console.log("books response is", res);
           setBooksResponse(res.data);
-          setIsSearch(true);
-          setIsVoiceSearch(false);
           setTimeout(() => {
             setIsBooksResponseFound(true);
           }, 5000);
         });
     }
   };
-
+  useEffect(() => {
+    setDoSearch(false);
+  }, []);
   useEffect(() => {
     if (doSearch) {
+      console.log("I am in useFetch");
+      setDoSearch(false);
+      setIsVoiceSearch(false);
+      setIsSearch(true);
       getAllResponse();
       getVideoResponse();
       getNewsResponse();
       getBooksResponse();
       getImageResponse();
     }
-  }, [doSearch, searchValue]);
+  }, [doSearch]);
 };
 
 export default useFetch;

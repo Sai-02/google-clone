@@ -6,28 +6,18 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Tooltip } from "@material-ui/core";
 import { Data } from "../../App";
 import Alert from "@material-ui/lab/Alert";
-import useFetch from "../useFetch";
 import { isValidText } from "../Globals/isValidText";
 const HomePageHero = ({ searchValueLengthExceedAlert }) => {
   const [input, setInput] = useState("");
   const [isAlert, setIsAlert] = useState(false);
-  const {
-    setIsVoiceSearch,
-    isSearch,
-    setIsSearch,
-    searchValue,
-    setSearchValue,
-    doSearch,
-    setDoSearch,
-  } = useContext(Data);
+  const { setIsVoiceSearch, searchValue, setSearchValue, setDoSearch } =
+    useContext(Data);
   useEffect(() => {
     if (searchValue === "") {
     } else {
-      // useFetch(searchValue);
       setDoSearch(true);
     }
   }, [searchValue]);
-  useFetch(searchValue);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input === "") {
@@ -41,7 +31,6 @@ const HomePageHero = ({ searchValueLengthExceedAlert }) => {
       setIsAlert(true);
       return;
     }
-
     setSearchValue(input);
   };
   return (
