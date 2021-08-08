@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Google Clone
+This is clone of Search Engine Google. It allows to search by giving input as well as by taking audio. It gives webpage links, image links, news links, video links and book links related to the searched keyword.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech Used
+**React.js, Sass**
 
-## Available Scripts
+## Live Demo
+This site is hosted [here](https://google-clone-sai.netlify.app/)
 
-In the project directory, you can run:
+## Screenshots
+![Screenshot (256)](https://user-images.githubusercontent.com/56087847/128629570-a20a69da-5273-482e-97c8-d181aa79cfb2.png)
+![Screenshot (258)](https://user-images.githubusercontent.com/56087847/128629575-1c0c062f-d661-4684-897f-bfc20bc31c16.png)
+![Screenshot (259)](https://user-images.githubusercontent.com/56087847/128629579-2b49653f-abde-4e78-89cc-61ce01ac1d01.png)
+![Screenshot (260)](https://user-images.githubusercontent.com/56087847/128629582-f9c1f6ec-4ea9-4a5e-8c4f-4b0523f3a0c6.png)
+![Screenshot (261)](https://user-images.githubusercontent.com/56087847/128629584-74a29fec-a957-41cc-9155-3bba91747fcb.png)
+![Screenshot (262)](https://user-images.githubusercontent.com/56087847/128629588-96da5f71-0476-4444-b010-ff98b1edafe6.png)
+![Screenshot (263)](https://user-images.githubusercontent.com/56087847/128629591-c4030b5c-edde-48ef-80ae-38f9e572c959.png)
+![Screenshot (264)](https://user-images.githubusercontent.com/56087847/128629593-46794343-9ee7-4e9e-9ad9-94cc86020501.png)
+![Screenshot (265)](https://user-images.githubusercontent.com/56087847/128629598-4fb0d705-2c78-4873-a89e-c0b7b10cd9cf.png)
+![Screenshot (266)](https://user-images.githubusercontent.com/56087847/128629600-a0e358b0-8a4f-40b3-be1c-9f289f1614c7.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## APIs Used
+1. Google Custom Search API : For getting web page links and image links.
+2. YouTube Data API v3 : For getting video links.
+3. Google Books API : For getting Book links.
+4. GNews API : For getting News artice links. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Run it locally
+1. Clone the repo
+2. Run `npm install`
+3. Add all API Keys in `.env` file
+4. Now run `npm start` to run it locally
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
