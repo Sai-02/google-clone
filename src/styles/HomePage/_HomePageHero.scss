@@ -15,11 +15,8 @@
   place-items: center;
 }
 .home-page-alert {
-  
   width: 80%;
   justify-self: center;
-
-  
 }
 
 //=================================================
@@ -30,7 +27,9 @@
 .home-page-hero-section {
   display: grid;
   place-items: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  min-height: 60vh;
+  gap: 0;
 }
 .home-page-hero-section-center {
   display: grid;
