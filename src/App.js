@@ -2,7 +2,6 @@ import React from "react";
 import HomePage from "./components/HomePage/HomePage";
 import SearchPage from "./components/SearchPage/SearchPage";
 import VoiceSearch from "./components/HomePage/VoiceSearch";
-import Footer from "./components/Globals/Footer";
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import useFetch from "./components/useFetch";
@@ -78,10 +77,7 @@ const Wrapper = () => {
       {isVoiceSearch ? (
         <VoiceSearch />
       ) : (
-        <>
-          {isSearch ? <SearchPage /> : <HomePage />}
-          <Footer />
-        </>
+        <>{isSearch ? <SearchPage /> : <HomePage />}</>
       )}
     </>
   );

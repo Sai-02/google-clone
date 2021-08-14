@@ -1,6 +1,6 @@
 .image-response {
   padding: 1rem;
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(4, auto);
   place-items: center;
@@ -78,7 +78,7 @@
       max-height: auto;
     }
   }
-  .image-response-skeleton{
+  .image-response-skeleton {
     width: 100%;
   }
 }

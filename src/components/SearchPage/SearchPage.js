@@ -8,6 +8,7 @@ import BooksResponse from "./BooksResponse";
 import ImagesResponse from "./ImagesResponse";
 import NewsResponse from "./NewsResponse";
 import VideoResponse from "./VideoResponse";
+import Footer from "../Globals/Footer";
 import { Modal } from "antd";
 
 const SearchPage = () => {
@@ -90,6 +91,7 @@ const SearchPage = () => {
           </Route>
         </Switch>
       </section>
+      <Footer />
     </>
   );
 };
