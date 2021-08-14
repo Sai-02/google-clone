@@ -82,7 +82,13 @@ const BooksResponse = () => {
                             )}
                           </span>
                           <span className="book-time">
-                            {item.volumeInfo.publishedDate.substring(0, 4)}
+                            {item.volumeInfo.publishedDate === undefined ? (
+                              <></>
+                            ) : (
+                              <>
+                                {item.volumeInfo.publishedDate.substring(0, 4)}
+                              </>
+                            )}
                           </span>
                         </p>
                         <p className="book-description">
