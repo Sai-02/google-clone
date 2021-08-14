@@ -1,0 +1,33 @@
+footer {
+  margin-top: 3rem;
+  background: rgb(48, 54, 51);
+  padding: 2rem;
+  padding-bottom: 1rem;
+  h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    li {
+      color: white;
+      list-style: none;
+      font-size: 2rem;
+
+      padding: 1rem;
+      margin-bottom: 0;
+      margin-top: 0;
+      a {
+        color: white;
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
