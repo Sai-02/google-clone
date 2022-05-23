@@ -81,9 +81,10 @@ export const useFetch = () => {
   const getBooksResponse = () => {
     if (doSearch && searchValue !== "") {
       axios
-        .get(
-          `https://books.googleapis.com/books/v1/volumes?q=${searchValue}&key=${booksResponseApiKey}`
-        )
+        // .get(
+        //   `https://books.googleapis.com/books/v1/volumes?q=${searchValue}&key=${booksResponseApiKey}`
+        // )
+        .get(`https://www.googleapis.com/books/v1/volumes?q=${searchValue}`)
         // .get("../booksResponse.json")
         .then((res) => {
           setBooksResponse(res.data);
